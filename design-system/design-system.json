@@ -1,0 +1,425 @@
+{
+  "name": "prueba",
+  "version": "0.1.1",
+  "components": [
+    {
+      "name": "Avatar",
+      "category": "Generated",
+      "public": true,
+      "description": "A circular visual that represents a user, account or entity through image, initials or icon.",
+      "whenToUse": [
+        "Identifying a user in a row, card or header",
+        "Authoring or assignment metadata",
+        "Presence with status dots",
+        "Inline mentions or comments"
+      ],
+      "whenNotToUse": [
+        "For brand or product imagery — use a thumbnail",
+        "For decorative illustration — use an image",
+        "For stats or counts — use Badge"
+      ],
+      "props": [
+        {
+          "name": "Size",
+          "kind": "variant",
+          "values": [
+            "sm",
+            "md",
+            "lg",
+            "xl"
+          ],
+          "default": "sm"
+        },
+        {
+          "name": "Type",
+          "kind": "variant",
+          "values": [
+            "image",
+            "initials",
+            "icon"
+          ],
+          "default": "image"
+        },
+        {
+          "name": "Border",
+          "kind": "boolean",
+          "default": false
+        },
+        {
+          "name": "Status",
+          "kind": "variant",
+          "values": [
+            "none",
+            "online",
+            "offline",
+            "busy",
+            "away"
+          ],
+          "default": "none"
+        },
+        {
+          "name": "IconSrc",
+          "kind": "variant",
+          "values": [
+            "alarm-clock-minus",
+            "alert-octagon",
+            "alert-triangle",
+            "user"
+          ],
+          "default": "user"
+        },
+        {
+          "name": "Initials",
+          "kind": "text",
+          "default": "AB"
+        }
+      ],
+      "tokensUsed": [
+        "border.cutout",
+        "border.default",
+        "content.default",
+        "icon.primary",
+        "icon.strokeWidth.lg",
+        "icon.strokeWidth.md",
+        "icon.strokeWidth.sm",
+        "icon.strokeWidth.xl",
+        "radius.full",
+        "sizes.scale.2xl",
+        "sizes.scale.3xl",
+        "sizes.scale.5xl",
+        "sizes.scale.6xl",
+        "sizes.scale.8xl",
+        "sizes.scale.lg",
+        "sizes.scale.sm",
+        "sizes.scale.xl",
+        "status.error.default",
+        "status.success.default",
+        "status.warning.default",
+        "surface.subtle",
+        "typography.roles.body.steps.md",
+        "typography.roles.body.steps.sm",
+        "typography.roles.body.steps.xs"
+      ],
+      "file": "components/Avatar.tsx",
+      "doc": "components/Avatar.md"
+    },
+    {
+      "name": "Button",
+      "category": "Generated",
+      "public": true,
+      "description": "Button Control interactivo que dispara una acción inmediata, un envío de formulario o el inicio de un flujo. Comunica jerarquía visual mediante su tipo y refuerza el significado con iconos opcionales. Vista previa Cuándo usarlo Confirmar o enviar los datos de un formulario Disparar la acción principal de una pantalla o sección Abrir un diálogo, drawer o flujo que requiere decisión del usuario Agrupar un par de decisión como Cancelar y Confirmar Ejecutar acciones con consecuencias críticas como eliminar o publicar Cuándo NO usarlo Para navegar a otra URL dentro de la aplicación; usa un componente Link Para alternar un estado encendido/apagado; usa Switch u otro control seleccionable Cuando el elemento es puramente decorativo y no ejecuta ninguna acción Para presentar múltiples opciones de selección; usa un menú o grupo de opciones Anatomía Variantes El eje principal es Type, con ocho valores que van desde la acción primaria de mayor énfasis hasta variantes contextuales de estado (destructive, warning, success, info) y de superficie (ghost-on-color). El tamaño se controla con sm, md y lg, y el ancho con hug o fill. Type Tamaños Estados Accesibilidad Navegable con Tab y activable con Enter y Espacio siguiendo el patrón WAI-ARIA Button El anillo de foco debe ser visible con un contraste mínimo de 3:1 respecto al fondo adyacente La etiqueta debe describir la acción con un verbo claro; evita textos genéricos como OK o Sí El estado disabled se declara con el atributo disabled o aria-disabled para que los lectores de pantalla lo anuncien como no accionable Los botones destructive o de alto impacto deben ir acompañados de un diálogo de confirmación para evitar acciones irreversibles accidentales Mantén un contraste mínimo de 4.5:1 entre el texto de la etiqueta y el fondo del contenedor en todos los tipos Do / Don't Referencias",
+      "whenToUse": [
+        "Confirming or submitting a form",
+        "Triggering a primary action on a screen",
+        "Launching a dialog, drawer or destructive flow",
+        "Grouping a decision pair (Cancel / Confirm)"
+      ],
+      "whenNotToUse": [
+        "For in-page navigation to another URL — use Link",
+        "For toggling state on/off — use Switch or a selectable control",
+        "When the visual is just decoration with no action"
+      ],
+      "props": [
+        {
+          "name": "Size",
+          "kind": "variant",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "default": "md"
+        },
+        {
+          "name": "Type",
+          "kind": "variant",
+          "values": [
+            "primary",
+            "secondary",
+            "ghost",
+            "ghost-on-color",
+            "destructive",
+            "warning",
+            "success",
+            "info"
+          ],
+          "default": "primary"
+        },
+        {
+          "name": "Label",
+          "kind": "text",
+          "default": "Button"
+        },
+        {
+          "name": "State",
+          "kind": "variant",
+          "values": [
+            "default",
+            "hover",
+            "pressed",
+            "disabled"
+          ],
+          "default": "default"
+        },
+        {
+          "name": "Width",
+          "kind": "variant",
+          "values": [
+            "hug",
+            "fill"
+          ],
+          "default": "hug"
+        },
+        {
+          "name": "IconLeft",
+          "kind": "boolean",
+          "default": true
+        },
+        {
+          "name": "IconRight",
+          "kind": "boolean",
+          "default": false
+        },
+        {
+          "name": "IconLeftSrc",
+          "kind": "variant",
+          "values": [
+            "alarm-clock-minus",
+            "alert-octagon",
+            "alert-triangle",
+            "upload",
+            "chevron-down",
+            "chevron-right",
+            "chevron-left",
+            "chevron-up",
+            "x",
+            "check",
+            "plus",
+            "minus",
+            "arrow-right",
+            "arrow-left",
+            "search",
+            "info",
+            "circle-check",
+            "triangle-alert",
+            "circle-alert"
+          ],
+          "default": "alarm-clock-minus"
+        },
+        {
+          "name": "IconRightSrc",
+          "kind": "variant",
+          "values": [
+            "alarm-clock-minus",
+            "alert-octagon",
+            "alert-triangle",
+            "upload",
+            "chevron-down",
+            "chevron-right",
+            "chevron-left",
+            "chevron-up",
+            "x",
+            "check",
+            "plus",
+            "minus",
+            "arrow-right",
+            "arrow-left",
+            "search",
+            "info",
+            "circle-check",
+            "triangle-alert",
+            "circle-alert"
+          ],
+          "default": "alarm-clock-minus"
+        }
+      ],
+      "tokensUsed": [
+        "border.stronger",
+        "content.default",
+        "content.disabled",
+        "content.muted",
+        "content.on-accent",
+        "content.on-accent-disabled",
+        "content.on-secondary",
+        "icon.lg",
+        "icon.md",
+        "icon.on-color",
+        "icon.primary",
+        "icon.sm",
+        "icon.strokeWidth.lg",
+        "icon.strokeWidth.md",
+        "icon.strokeWidth.sm",
+        "radius.md",
+        "spacing.lg",
+        "spacing.md",
+        "spacing.sm",
+        "spacing.xs",
+        "status.error.default",
+        "status.info.default",
+        "status.success.default",
+        "status.warning.default",
+        "surface.accent",
+        "surface.accent-disabled",
+        "surface.accent-hover",
+        "surface.accent-pressed",
+        "surface.default-disabled",
+        "surface.secondary",
+        "surface.secondary-disabled",
+        "surface.secondary-hover",
+        "surface.secondary-pressed",
+        "typography.roles.body.steps.md"
+      ],
+      "file": "components/Button.tsx",
+      "doc": "components/Button.md"
+    },
+    {
+      "name": "Card",
+      "category": "Containers",
+      "public": true,
+      "description": "A self-contained surface that groups a heading, body, optional media and actions about a single entity.",
+      "whenToUse": [
+        "Items in a feed, gallery or grid",
+        "Summarising an entity with a CTA (product, project, article)",
+        "Dashboard tiles that pair text, image and actions",
+        "Catalogues with mixed text and media"
+      ],
+      "whenNotToUse": [
+        "For dense rows — use a Table",
+        "For static text blocks — render plain content",
+        "For interactive controls only — use Button or ActionGroup"
+      ],
+      "props": [
+        {
+          "name": "Size",
+          "kind": "variant",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "default": "sm"
+        },
+        {
+          "name": "Image",
+          "kind": "variant",
+          "values": [
+            "shown",
+            "hidden"
+          ],
+          "default": "shown"
+        },
+        {
+          "name": "Border",
+          "kind": "variant",
+          "values": [
+            "bordered",
+            "borderless"
+          ],
+          "default": "bordered"
+        },
+        {
+          "name": "Layout",
+          "kind": "variant",
+          "values": [
+            "vertical",
+            "horizontal"
+          ],
+          "default": "vertical"
+        },
+        {
+          "name": "Variant",
+          "kind": "variant",
+          "values": [
+            "default",
+            "subtle",
+            "accent"
+          ],
+          "default": "default"
+        },
+        {
+          "name": "BodyText",
+          "kind": "text",
+          "default": "Body copy describes the card content with a couple of lines of context."
+        },
+        {
+          "name": "FooterText",
+          "kind": "text",
+          "default": "Footer note"
+        },
+        {
+          "name": "ShowAvatar",
+          "kind": "boolean",
+          "default": false
+        },
+        {
+          "name": "ShowFooter",
+          "kind": "boolean",
+          "default": false
+        },
+        {
+          "name": "ShowHeader",
+          "kind": "boolean",
+          "default": true
+        },
+        {
+          "name": "HeaderTitle",
+          "kind": "text",
+          "default": "Card title"
+        },
+        {
+          "name": "ImagePosition",
+          "kind": "variant",
+          "values": [
+            "top",
+            "bottom",
+            "left",
+            "right"
+          ],
+          "default": "top"
+        },
+        {
+          "name": "HeaderSubtitle",
+          "kind": "text",
+          "default": "5 min · Updated today"
+        },
+        {
+          "name": "ShowActionButton",
+          "kind": "boolean",
+          "default": true
+        },
+        {
+          "name": "ShowSecondaryButton",
+          "kind": "boolean",
+          "default": false
+        }
+      ],
+      "tokensUsed": [
+        "border.subtle",
+        "content.default",
+        "content.muted",
+        "content.on-accent",
+        "radius.md",
+        "radius.none",
+        "sizes.scale.10xl",
+        "sizes.scale.12xl",
+        "sizes.scale.8xl",
+        "spacing.lg",
+        "spacing.md",
+        "spacing.sm",
+        "spacing.xs",
+        "surface.accent",
+        "surface.default",
+        "surface.subtle",
+        "typography.roles.body.steps.md",
+        "typography.roles.body.steps.md-semibold",
+        "typography.roles.body.steps.sm",
+        "typography.roles.body.steps.sm-semibold",
+        "typography.roles.body.steps.xs",
+        "typography.roles.headings.steps.h5",
+        "typography.weights.bold"
+      ],
+      "file": "components/Card.tsx",
+      "doc": "components/Card.md"
+    }
+  ]
+}
