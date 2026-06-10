@@ -1,0 +1,16 @@
+{
+  "name": "@prueba/design-system",
+  "version": "0.1.1",
+  "description": "Design system synced from prueba (DS Generator Repeat).",
+  "main": "components/index.ts",
+  "types": "components/index.ts",
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "files": [
+    "components/**/*",
+    "tokens.css",
+    "tokens.json"
+  ]
+}
