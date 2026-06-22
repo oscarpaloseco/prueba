@@ -1,113 +1,65 @@
 {
-  "name": "prueba",
+  "name": "shadcn",
   "version": "0.1.1",
   "components": [
     {
-      "name": "Avatar",
-      "category": "Generated",
+      "name": "Badge",
+      "category": "shadcn",
       "public": true,
-      "description": "A circular visual that represents a user, account or entity through image, initials or icon.",
+      "description": "A small, saturated indicator that emphasises a count, status or label.",
       "whenToUse": [
-        "Identifying a user in a row, card or header",
-        "Authoring or assignment metadata",
-        "Presence with status dots",
-        "Inline mentions or comments"
+        "Counters on navigation items (8 unread)",
+        "Status pills inside tables or cards",
+        "Featured / new / beta indicators",
+        "Numeric or short status labels that demand emphasis"
       ],
       "whenNotToUse": [
-        "For brand or product imagery — use a thumbnail",
-        "For decorative illustration — use an image",
-        "For stats or counts — use Badge"
+        "For removable filter chips — use Tag",
+        "For long labels — use Tag with a softer palette",
+        "For navigation — use Link"
       ],
       "props": [
         {
-          "name": "Size",
-          "kind": "variant",
-          "values": [
-            "sm",
-            "md",
-            "lg",
-            "xl"
-          ],
-          "default": "sm"
-        },
-        {
-          "name": "Type",
-          "kind": "variant",
-          "values": [
-            "image",
-            "initials",
-            "icon"
-          ],
-          "default": "image"
-        },
-        {
-          "name": "Border",
-          "kind": "boolean",
-          "default": false
-        },
-        {
-          "name": "Status",
-          "kind": "variant",
-          "values": [
-            "none",
-            "online",
-            "offline",
-            "busy",
-            "away"
-          ],
-          "default": "none"
-        },
-        {
-          "name": "IconSrc",
-          "kind": "variant",
-          "values": [
-            "alarm-clock-minus",
-            "alert-octagon",
-            "alert-triangle",
-            "user"
-          ],
-          "default": "user"
-        },
-        {
-          "name": "Initials",
+          "name": "Label",
           "kind": "text",
-          "default": "AB"
+          "default": "Badge"
+        },
+        {
+          "name": "Variant",
+          "kind": "variant",
+          "values": [
+            "default",
+            "secondary",
+            "destructive",
+            "outline",
+            "ghost",
+            "link"
+          ],
+          "default": "default"
         }
       ],
       "tokensUsed": [
-        "border.cutout",
-        "border.default",
-        "content.default",
-        "icon.primary",
-        "icon.strokeWidth.lg",
-        "icon.strokeWidth.md",
-        "icon.strokeWidth.sm",
-        "icon.strokeWidth.xl",
+        "base.foreground",
+        "border",
+        "destructive.default",
+        "destructive.foreground",
+        "primary.default",
+        "primary.foreground",
         "radius.full",
-        "sizes.scale.2xl",
-        "sizes.scale.3xl",
-        "sizes.scale.5xl",
-        "sizes.scale.6xl",
-        "sizes.scale.8xl",
-        "sizes.scale.lg",
-        "sizes.scale.sm",
-        "sizes.scale.xl",
-        "status.error.default",
-        "status.success.default",
-        "status.warning.default",
-        "surface.subtle",
-        "typography.roles.body.steps.md",
-        "typography.roles.body.steps.sm",
-        "typography.roles.body.steps.xs"
+        "secondary.default",
+        "secondary.foreground",
+        "spacing.1",
+        "typography.roles.caption.steps.sm",
+        "typography.weights.medium"
       ],
-      "file": "components/Avatar.tsx",
-      "doc": "components/Avatar.md"
+      "file": "components/Badge.tsx",
+      "doc": "components/Badge.md"
     },
     {
       "name": "Button",
-      "category": "Generated",
-      "public": true,
-      "description": "Button Control interactivo que dispara una acción inmediata, un envío de formulario o el inicio de un flujo. Comunica jerarquía visual mediante su tipo y refuerza el significado con iconos opcionales. Vista previa Cuándo usarlo Confirmar o enviar los datos de un formulario Disparar la acción principal de una pantalla o sección Abrir un diálogo, drawer o flujo que requiere decisión del usuario Agrupar un par de decisión como Cancelar y Confirmar Ejecutar acciones con consecuencias críticas como eliminar o publicar Cuándo NO usarlo Para navegar a otra URL dentro de la aplicación; usa un componente Link Para alternar un estado encendido/apagado; usa Switch u otro control seleccionable Cuando el elemento es puramente decorativo y no ejecuta ninguna acción Para presentar múltiples opciones de selección; usa un menú o grupo de opciones Anatomía Variantes El eje principal es Type, con ocho valores que van desde la acción primaria de mayor énfasis hasta variantes contextuales de estado (destructive, warning, success, info) y de superficie (ghost-on-color). El tamaño se controla con sm, md y lg, y el ancho con hug o fill. Type Tamaños Estados Accesibilidad Navegable con Tab y activable con Enter y Espacio siguiendo el patrón WAI-ARIA Button El anillo de foco debe ser visible con un contraste mínimo de 3:1 respecto al fondo adyacente La etiqueta debe describir la acción con un verbo claro; evita textos genéricos como OK o Sí El estado disabled se declara con el atributo disabled o aria-disabled para que los lectores de pantalla lo anuncien como no accionable Los botones destructive o de alto impacto deben ir acompañados de un diálogo de confirmación para evitar acciones irreversibles accidentales Mantén un contraste mínimo de 4.5:1 entre el texto de la etiqueta y el fondo del contenedor en todos los tipos Do / Don't Referencias",
+      "category": "shadcn",
+      "public": false,
+      "description": "Button Button es un elemento interactivo que desencadena acciones o navega al usuario dentro de la interfaz. Disponible en múltiples variantes, tamaños y estados para adaptarse a distintos niveles de jerarquía visual y contextos de uso. Vista previa Cuándo usarlo Confirmar o enviar un formulario como acción principal de la pantalla. Desencadenar la apertura de un diálogo, modal o panel lateral. Ofrecer una acción alternativa o secundaria junto a la acción primaria. Ejecutar acciones destructivas que requieren confirmación explícita del usuario. Representar acciones compactas mediante iconos cuando el espacio es limitado y la acción es reconocible sin texto. Cuándo NO usarlo No uses Button para navegar a una URL externa cuando un enlace de texto en línea es semánticamente más apropiado. No uses múltiples botones de variante default en la misma sección; reserva el énfasis máximo para una única acción primaria. No uses un botón icon-only sin aria-label cuando la acción no es universalmente reconocible por su icono. No uses Button para representar estados informativos o de selección persistente; considera Toggle o Checkbox en su lugar. Anatomía Variantes El componente expone seis variantes de estilo (default, secondary, destructive, outline, ghost, link) y ocho tamaños que incluyen versiones estándar e icon-only, permitiendo cubrir desde acciones primarias destacadas hasta controles compactos en toolbars. Variant Tamaños Estados Accesibilidad Mantén un anillo de foco visible y de alto contraste en el estado focus para usuarios de teclado y switch access. Los botones icon-only deben incluir aria-label descriptivo que comunique la acción, ya que el icono no es leído por lectores de pantalla. Los botones en estado disabled deben tener el atributo disabled o aria-disabled='true' para que los lectores de pantalla no los anuncien como accionables. El elemento raíz debe ser <button> o role='button' para garantizar la activación con Enter y Spacebar por defecto. Los botones destructivos deben comunicar la naturaleza irreversible de la acción; considera añadir un mensaje de confirmación accesible antes de ejecutarla. Asegura una relación de contraste mínima de 4.5:1 entre el texto del label y el fondo del botón en todos los estados visibles. Do / Don't Referencias",
       "whenToUse": [
         "Confirming or submitting a form",
         "Triggering a primary action on a screen",
@@ -124,26 +76,16 @@
           "name": "Size",
           "kind": "variant",
           "values": [
+            "xs",
             "sm",
             "md",
-            "lg"
+            "lg",
+            "icon-xs",
+            "icon-sm",
+            "icon",
+            "icon-lg"
           ],
           "default": "md"
-        },
-        {
-          "name": "Type",
-          "kind": "variant",
-          "values": [
-            "primary",
-            "secondary",
-            "ghost",
-            "ghost-on-color",
-            "destructive",
-            "warning",
-            "success",
-            "info"
-          ],
-          "default": "primary"
         },
         {
           "name": "Label",
@@ -156,125 +98,91 @@
           "values": [
             "default",
             "hover",
-            "pressed",
+            "focus",
             "disabled"
           ],
           "default": "default"
         },
         {
-          "name": "Width",
-          "kind": "variant",
-          "values": [
-            "hug",
-            "fill"
-          ],
-          "default": "hug"
-        },
-        {
-          "name": "IconLeft",
+          "name": "HasIcon",
           "kind": "boolean",
           "default": true
         },
         {
-          "name": "IconRight",
+          "name": "Variant",
+          "kind": "variant",
+          "values": [
+            "default",
+            "secondary",
+            "destructive",
+            "outline",
+            "ghost",
+            "link"
+          ],
+          "default": "default"
+        },
+        {
+          "name": "IconOnly",
           "kind": "boolean",
           "default": false
-        },
-        {
-          "name": "IconLeftSrc",
-          "kind": "variant",
-          "values": [
-            "alarm-clock-minus",
-            "alert-octagon",
-            "alert-triangle",
-            "upload",
-            "chevron-down",
-            "chevron-right",
-            "chevron-left",
-            "chevron-up",
-            "x",
-            "check",
-            "plus",
-            "minus",
-            "arrow-right",
-            "arrow-left",
-            "search",
-            "info",
-            "circle-check",
-            "triangle-alert",
-            "circle-alert"
-          ],
-          "default": "alarm-clock-minus"
-        },
-        {
-          "name": "IconRightSrc",
-          "kind": "variant",
-          "values": [
-            "alarm-clock-minus",
-            "alert-octagon",
-            "alert-triangle",
-            "upload",
-            "chevron-down",
-            "chevron-right",
-            "chevron-left",
-            "chevron-up",
-            "x",
-            "check",
-            "plus",
-            "minus",
-            "arrow-right",
-            "arrow-left",
-            "search",
-            "info",
-            "circle-check",
-            "triangle-alert",
-            "circle-alert"
-          ],
-          "default": "alarm-clock-minus"
         }
       ],
       "tokensUsed": [
-        "border.stronger",
-        "content.default",
-        "content.disabled",
-        "content.muted",
-        "content.on-accent",
-        "content.on-accent-disabled",
-        "content.on-secondary",
-        "icon.lg",
-        "icon.md",
-        "icon.on-color",
-        "icon.primary",
-        "icon.sm",
-        "icon.strokeWidth.lg",
-        "icon.strokeWidth.md",
-        "icon.strokeWidth.sm",
+        "accent.default",
+        "accent.foreground",
+        "base.background",
+        "base.foreground",
+        "destructive.default",
+        "destructive.foreground",
+        "input",
+        "primary.default",
+        "primary.foreground",
         "radius.md",
-        "spacing.lg",
-        "spacing.md",
-        "spacing.sm",
-        "spacing.xs",
-        "status.error.default",
-        "status.info.default",
-        "status.success.default",
-        "status.warning.default",
-        "surface.accent",
-        "surface.accent-disabled",
-        "surface.accent-hover",
-        "surface.accent-pressed",
-        "surface.default-disabled",
-        "surface.secondary",
-        "surface.secondary-disabled",
-        "surface.secondary-hover",
-        "surface.secondary-pressed",
-        "typography.roles.body.steps.md"
+        "ring",
+        "secondary.default",
+        "secondary.foreground",
+        "sizes.components.lg",
+        "sizes.components.md",
+        "sizes.components.sm",
+        "sizes.scale.4",
+        "sizes.scale.7",
+        "spacing.1",
+        "spacing.2",
+        "spacing.3",
+        "spacing.4",
+        "spacing.8",
+        "typography.roles.caption.steps.sm",
+        "typography.roles.label.steps.sm"
       ],
       "file": "components/Button.tsx",
       "doc": "components/Button.md"
     },
     {
+      "name": "ButtonGroup",
+      "category": "shadcn",
+      "public": true,
+      "description": "A horizontally or vertically aligned set of related Buttons, typically the commit pair of a form or dialog.",
+      "whenToUse": [
+        "The footer of a dialog, drawer or form",
+        "A confirm / cancel pair at the end of a flow",
+        "A small set of mutually relevant CTAs",
+        "When you need consistent spacing between commit actions"
+      ],
+      "whenNotToUse": [
+        "For segmented selection — use ActionGroup",
+        "For dense toolbars — use ActionBar",
+        "When buttons are unrelated and live across the page"
+      ],
+      "props": [],
+      "tokensUsed": [
+        "radius.md"
+      ],
+      "file": "components/ButtonGroup.tsx",
+      "doc": "components/ButtonGroup.md"
+    },
+    {
       "name": "Card",
-      "category": "Containers",
+      "category": "shadcn",
       "public": true,
       "description": "A self-contained surface that groups a heading, body, optional media and actions about a single entity.",
       "whenToUse": [
@@ -290,6 +198,117 @@
       ],
       "props": [
         {
+          "name": "Title",
+          "kind": "text",
+          "default": "Create project"
+        }
+      ],
+      "tokensUsed": [
+        "border",
+        "card.default",
+        "card.foreground",
+        "muted.default",
+        "muted.foreground",
+        "radius.lg",
+        "spacing.1",
+        "spacing.2",
+        "spacing.6",
+        "typography.roles.body.steps.sm",
+        "typography.roles.heading.steps.h3"
+      ],
+      "file": "components/Card.tsx",
+      "doc": "components/Card.md"
+    },
+    {
+      "name": "Checkbox",
+      "category": "shadcn",
+      "public": true,
+      "description": "A toggle that selects or deselects an independent option; multiple checkboxes can be checked at once.",
+      "whenToUse": [
+        "Selecting any number of options in a list",
+        "Opting in or out of a single preference",
+        "Picking multiple filters or facets",
+        "Bulk-select rows in a table"
+      ],
+      "whenNotToUse": [
+        "For one-of-many selection — use Radio",
+        "For a binary on/off toggle that takes effect immediately — use Switch",
+        "When the option fundamentally changes the surface — use a different control"
+      ],
+      "props": [
+        {
+          "name": "Label",
+          "kind": "text",
+          "default": "Accept terms and conditions"
+        },
+        {
+          "name": "State",
+          "kind": "variant",
+          "values": [
+            "default",
+            "checked",
+            "indeterminate",
+            "focus",
+            "disabled"
+          ],
+          "default": "default"
+        }
+      ],
+      "tokensUsed": [
+        "base.foreground",
+        "primary.default",
+        "primary.foreground",
+        "radius.sm",
+        "ring",
+        "sizes.scale.4",
+        "spacing.2",
+        "typography.roles.body.steps.sm"
+      ],
+      "file": "components/Checkbox.tsx",
+      "doc": "components/Checkbox.md"
+    },
+    {
+      "name": "Field",
+      "category": "shadcn",
+      "public": false,
+      "description": "shadcn/ui Field. Label + ONE control slot + description + error. The control is a real nested instance of any saved component (Input by default) — pick it in the panel, swap it natively in Figma. The choiceCard option wraps the slot in a bordered, checkable container. `responsive` orientation renders as vertical in the IR (no container queries in Figma). Fully bound to shadcn semantic tokens.",
+      "whenToUse": [],
+      "whenNotToUse": [],
+      "props": [
+        {
+          "name": "Label",
+          "kind": "text",
+          "default": "Username"
+        }
+      ],
+      "tokensUsed": [
+        "base.foreground",
+        "muted.foreground",
+        "spacing.3",
+        "typography.roles.body.steps.sm",
+        "typography.roles.label.steps.sm"
+      ],
+      "file": "components/Field.tsx",
+      "doc": "components/Field.md"
+    },
+    {
+      "name": "Input",
+      "category": "shadcn",
+      "public": false,
+      "description": "A single-line text field for free-form entry such as names, emails or short values.",
+      "whenToUse": [
+        "Collecting a single line of text or a short value",
+        "Email, name, URL, search-like queries (when SearchField doesn't fit)",
+        "Inline editing of a discrete property",
+        "Inside a Form alongside other controls"
+      ],
+      "whenNotToUse": [
+        "For numeric input with stepping — use NumberField",
+        "For multi-line content — use TextArea",
+        "When the value belongs to a finite list — use Select / ComboBox"
+      ],
+      "props": [
+        {
           "name": "Size",
           "kind": "variant",
           "values": [
@@ -297,129 +316,414 @@
             "md",
             "lg"
           ],
-          "default": "sm"
+          "default": "md"
         },
         {
-          "name": "Image",
-          "kind": "variant",
-          "values": [
-            "shown",
-            "hidden"
-          ],
-          "default": "shown"
-        },
-        {
-          "name": "Border",
-          "kind": "variant",
-          "values": [
-            "bordered",
-            "borderless"
-          ],
-          "default": "bordered"
-        },
-        {
-          "name": "Layout",
-          "kind": "variant",
-          "values": [
-            "vertical",
-            "horizontal"
-          ],
-          "default": "vertical"
-        },
-        {
-          "name": "Variant",
+          "name": "State",
           "kind": "variant",
           "values": [
             "default",
-            "subtle",
-            "accent"
+            "focus",
+            "error",
+            "disabled"
+          ],
+          "default": "default"
+        }
+      ],
+      "tokensUsed": [
+        "base.background",
+        "destructive.default",
+        "input",
+        "muted.foreground",
+        "radius.md",
+        "ring",
+        "sizes.components.lg",
+        "sizes.components.md",
+        "sizes.components.sm",
+        "spacing.2",
+        "spacing.3",
+        "typography.roles.body.steps.sm"
+      ],
+      "file": "components/Input.tsx",
+      "doc": "components/Input.md"
+    },
+    {
+      "name": "FieldGroup",
+      "category": "shadcn",
+      "public": true,
+      "description": "shadcn/ui FieldGroup. A gap-7 column of composed Fields (real instances of your saved components, grouped by the body composer) with an optional 'Or' FieldSeparator between groups. Fully bound to shadcn semantic tokens.",
+      "whenToUse": [],
+      "whenNotToUse": [],
+      "props": [],
+      "tokensUsed": [
+        "border",
+        "muted.foreground",
+        "spacing.2",
+        "spacing.7",
+        "typography.roles.body.steps.sm"
+      ],
+      "file": "components/FieldGroup.tsx",
+      "doc": "components/FieldGroup.md"
+    },
+    {
+      "name": "Input",
+      "category": "shadcn",
+      "public": false,
+      "description": "A single-line text field for free-form entry such as names, emails or short values.",
+      "whenToUse": [
+        "Collecting a single line of text or a short value",
+        "Email, name, URL, search-like queries (when SearchField doesn't fit)",
+        "Inline editing of a discrete property",
+        "Inside a Form alongside other controls"
+      ],
+      "whenNotToUse": [
+        "For numeric input with stepping — use NumberField",
+        "For multi-line content — use TextArea",
+        "When the value belongs to a finite list — use Select / ComboBox"
+      ],
+      "props": [
+        {
+          "name": "Size",
+          "kind": "variant",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "default": "md"
+        },
+        {
+          "name": "State",
+          "kind": "variant",
+          "values": [
+            "default",
+            "focus",
+            "error",
+            "disabled"
+          ],
+          "default": "default"
+        }
+      ],
+      "tokensUsed": [
+        "base.background",
+        "destructive.default",
+        "input",
+        "muted.foreground",
+        "radius.md",
+        "ring",
+        "sizes.components.lg",
+        "sizes.components.md",
+        "sizes.components.sm",
+        "spacing.2",
+        "spacing.3",
+        "typography.roles.body.steps.sm"
+      ],
+      "file": "components/Input.tsx",
+      "doc": "components/Input.md"
+    },
+    {
+      "name": "InputGroup",
+      "category": "shadcn",
+      "public": true,
+      "description": "shadcn/ui InputGroup. A single bordered row composing a borderless input with leading/trailing addons (text, icon, or a small button) sharing the group's border. States: default, focus (group ring), disabled. Fully bound to shadcn semantic tokens.",
+      "whenToUse": [],
+      "whenNotToUse": [],
+      "props": [
+        {
+          "name": "State",
+          "kind": "variant",
+          "values": [
+            "default",
+            "focus",
+            "disabled"
           ],
           "default": "default"
         },
         {
-          "name": "BodyText",
+          "name": "Placeholder",
           "kind": "text",
-          "default": "Body copy describes the card content with a couple of lines of context."
-        },
-        {
-          "name": "FooterText",
-          "kind": "text",
-          "default": "Footer note"
-        },
-        {
-          "name": "ShowAvatar",
-          "kind": "boolean",
-          "default": false
-        },
-        {
-          "name": "ShowFooter",
-          "kind": "boolean",
-          "default": false
-        },
-        {
-          "name": "ShowHeader",
-          "kind": "boolean",
-          "default": true
-        },
-        {
-          "name": "HeaderTitle",
-          "kind": "text",
-          "default": "Card title"
-        },
-        {
-          "name": "ImagePosition",
-          "kind": "variant",
-          "values": [
-            "top",
-            "bottom",
-            "left",
-            "right"
-          ],
-          "default": "top"
-        },
-        {
-          "name": "HeaderSubtitle",
-          "kind": "text",
-          "default": "5 min · Updated today"
-        },
-        {
-          "name": "ShowActionButton",
-          "kind": "boolean",
-          "default": true
-        },
-        {
-          "name": "ShowSecondaryButton",
-          "kind": "boolean",
-          "default": false
+          "default": "Search..."
         }
       ],
       "tokensUsed": [
-        "border.subtle",
-        "content.default",
-        "content.muted",
-        "content.on-accent",
+        "base.foreground",
+        "input",
+        "muted.foreground",
+        "radius.md",
+        "radius.sm",
+        "ring",
+        "secondary.default",
+        "sizes.scale.4",
+        "sizes.scale.6",
+        "sizes.scale.9",
+        "spacing.1",
+        "spacing.2",
+        "spacing.3",
+        "typography.roles.body.steps.sm"
+      ],
+      "file": "components/InputGroup.tsx",
+      "doc": "components/InputGroup.md"
+    },
+    {
+      "name": "Label",
+      "category": "shadcn",
+      "public": true,
+      "description": "shadcn/ui Label. A single inline form label (text-sm medium) bound to shadcn semantic + typography tokens. Disabled state dims to 50% opacity.",
+      "whenToUse": [],
+      "whenNotToUse": [],
+      "props": [
+        {
+          "name": "Label",
+          "kind": "text",
+          "default": "Email"
+        },
+        {
+          "name": "State",
+          "kind": "variant",
+          "values": [
+            "default",
+            "disabled"
+          ],
+          "default": "default"
+        }
+      ],
+      "tokensUsed": [
+        "base.foreground",
+        "typography.roles.label.steps.sm"
+      ],
+      "file": "components/Label.tsx",
+      "doc": "components/Label.md"
+    },
+    {
+      "name": "RadioGroup",
+      "category": "shadcn",
+      "public": true,
+      "description": "A labelled set of Radios where exactly one option must be selected.",
+      "whenToUse": [
+        "Single-choice questions in forms",
+        "Configurator steps with 2–7 fixed alternatives",
+        "Toggling between presets where the trade-off is visible",
+        "Setting selection with a sensible default"
+      ],
+      "whenNotToUse": [
+        "For multi-select — use CheckboxGroup",
+        "For more than ~7 options — use Select",
+        "For binary toggles that take effect immediately — use Switch"
+      ],
+      "props": [
+        {
+          "name": "State",
+          "kind": "variant",
+          "values": [
+            "default",
+            "focus",
+            "disabled"
+          ],
+          "default": "default"
+        }
+      ],
+      "tokensUsed": [
+        "base.foreground",
+        "primary.default",
+        "primary.foreground",
+        "radius.full",
+        "ring",
+        "sizes.scale.4",
+        "spacing.2",
+        "typography.roles.body.steps.sm"
+      ],
+      "file": "components/RadioGroup.tsx",
+      "doc": "components/RadioGroup.md"
+    },
+    {
+      "name": "Select",
+      "category": "shadcn",
+      "public": true,
+      "description": "A control that opens a list of options and displays the chosen one in a trigger field.",
+      "whenToUse": [
+        "Picking one value from a known finite list",
+        "Forms with 4–20 options where space matters",
+        "Country, language, role or status pickers",
+        "When typing is unnecessary"
+      ],
+      "whenNotToUse": [
+        "For free-form text or autocomplete — use ComboBox",
+        "For 2–4 visible options — use RadioGroup",
+        "For mutually-exclusive nav — use Tabs"
+      ],
+      "props": [
+        {
+          "name": "Open",
+          "kind": "boolean",
+          "default": false
+        },
+        {
+          "name": "Size",
+          "kind": "variant",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "default": "md"
+        },
+        {
+          "name": "State",
+          "kind": "variant",
+          "values": [
+            "default",
+            "focus",
+            "disabled"
+          ],
+          "default": "default"
+        },
+        {
+          "name": "Placeholder",
+          "kind": "text",
+          "default": "Select a fruit"
+        }
+      ],
+      "tokensUsed": [
+        "accent.default",
+        "accent.foreground",
+        "base.background",
+        "base.foreground",
+        "input",
+        "muted.foreground",
+        "radius.md",
+        "radius.sm",
+        "ring",
+        "sizes.components.lg",
+        "sizes.components.md",
+        "sizes.components.sm",
+        "sizes.scale.4",
+        "spacing.1",
+        "spacing.2",
+        "spacing.3",
+        "typography.roles.body.steps.sm",
+        "typography.roles.caption.steps.sm"
+      ],
+      "file": "components/Select.tsx",
+      "doc": "components/Select.md"
+    },
+    {
+      "name": "Switch",
+      "category": "shadcn",
+      "public": true,
+      "description": "A binary control that turns a setting on or off and applies the change immediately.",
+      "whenToUse": [
+        "Toggling a system or feature setting (Wi-Fi, notifications)",
+        "Switching between two states without confirmation",
+        "An always-visible preference that affects the surface",
+        "Anywhere users expect an OS-like toggle"
+      ],
+      "whenNotToUse": [
+        "For form submission style choices — use Checkbox",
+        "For one-of-many selection — use Radio",
+        "When the change requires explicit confirmation — use Button"
+      ],
+      "props": [
+        {
+          "name": "Size",
+          "kind": "variant",
+          "values": [
+            "sm",
+            "md"
+          ],
+          "default": "md"
+        },
+        {
+          "name": "State",
+          "kind": "variant",
+          "values": [
+            "default",
+            "checked",
+            "focus",
+            "disabled"
+          ],
+          "default": "default"
+        }
+      ],
+      "tokensUsed": [
+        "base.background",
+        "input",
+        "primary.default",
+        "radius.full",
+        "ring",
+        "sizes.scale.3",
+        "sizes.scale.4",
+        "sizes.scale.5",
+        "sizes.scale.7",
+        "sizes.scale.9"
+      ],
+      "file": "components/Switch.tsx",
+      "doc": "components/Switch.md"
+    },
+    {
+      "name": "Textarea",
+      "category": "shadcn",
+      "public": true,
+      "description": "shadcn/ui Textarea. Multi-line text field across sizes (sm, md, lg) — rounded-md, `input` border, body-sm placeholder in muted-foreground, focus ring on `ring`, destructive border + halo on error (aria-invalid), disabled dims to 50%. Fully bound to shadcn semantic tokens.",
+      "whenToUse": [],
+      "whenNotToUse": [],
+      "props": [
+        {
+          "name": "Size",
+          "kind": "variant",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "default": "md"
+        },
+        {
+          "name": "State",
+          "kind": "variant",
+          "values": [
+            "default",
+            "focus",
+            "error",
+            "disabled"
+          ],
+          "default": "default"
+        }
+      ],
+      "tokensUsed": [
+        "base.background",
+        "destructive.default",
+        "input",
+        "muted.foreground",
+        "radius.md",
+        "ring",
+        "spacing.2",
+        "spacing.3",
+        "typography.roles.body.steps.sm"
+      ],
+      "file": "components/Textarea.tsx",
+      "doc": "components/Textarea.md"
+    },
+    {
+      "name": "ToggleGroup",
+      "category": "shadcn",
+      "public": true,
+      "description": "shadcn/ui ToggleGroup. A row of toggle items sharing the Toggle styling — joined (spacing 0, shared border, end-only radius) or gapped. type single / multiple. The pressed set bakes from a comma index list; the preview is a genuine Radix ToggleGroup. Fully bound to shadcn semantic tokens.",
+      "whenToUse": [],
+      "whenNotToUse": [],
+      "props": [],
+      "tokensUsed": [
+        "accent.default",
+        "accent.foreground",
+        "base.foreground",
+        "input",
         "radius.md",
         "radius.none",
-        "sizes.scale.10xl",
-        "sizes.scale.12xl",
-        "sizes.scale.8xl",
-        "spacing.lg",
-        "spacing.md",
-        "spacing.sm",
-        "spacing.xs",
-        "surface.accent",
-        "surface.default",
-        "surface.subtle",
-        "typography.roles.body.steps.md",
-        "typography.roles.body.steps.md-semibold",
-        "typography.roles.body.steps.sm",
-        "typography.roles.body.steps.sm-semibold",
-        "typography.roles.body.steps.xs",
-        "typography.roles.headings.steps.h5",
-        "typography.weights.bold"
+        "sizes.scale.4",
+        "sizes.scale.9",
+        "spacing.3"
       ],
-      "file": "components/Card.tsx",
-      "doc": "components/Card.md"
+      "file": "components/ToggleGroup.tsx",
+      "doc": "components/ToggleGroup.md"
     }
   ]
 }
