@@ -27,58 +27,19 @@ A self-contained surface that groups a heading, body, optional media and actions
 
 ## Variants
 
-### Variant
-
-| Variant | Purpose |
-| --- | --- |
-| `default` | Standard appearance used when no special emphasis applies. |
-| `subtle` | Quiet action that recedes until needed. |
-| `accent` | — |
-
-### Sizes
-
-| Size | Height | Padding | Typography | Use case |
-| --- | --- | --- | --- | --- |
-| `sm` | 14px | — | typography.roles.body.steps.sm-semibold | Dense UIs and secondary contexts. |
-| `md` | 26px | — | typography.roles.body.steps.md-semibold | Default for most layouts. |
-| `lg` | 22px | — | typography.roles.headings.steps.h5 | Prominent or touch-friendly contexts. |
+Size: sm, md, lg. Variant: default, subtle, accent. Layout: vertical, horizontal. Optional avatar, image, header, footer and actions.
 
 ## Props
 
 | Name | Type | Values | Default | Description |
 |------|------|--------|---------|-------------|
-| `Size` | variant | sm, md, lg | `sm` | |
-| `Image` | variant | shown, hidden | `shown` | |
-| `Border` | variant | bordered, borderless | `bordered` | |
-| `Layout` | variant | vertical, horizontal | `vertical` | |
-| `Variant` | variant | default, subtle, accent | `default` | |
-| `BodyText` | text |  | `Body copy describes the card content with a couple of lines of context.` | |
-| `FooterText` | text |  | `Footer note` | |
-| `ShowAvatar` | boolean |  | `false` | |
-| `ShowFooter` | boolean |  | `false` | |
-| `ShowHeader` | boolean |  | `true` | |
-| `HeaderTitle` | text |  | `Card title` | |
-| `ImagePosition` | variant | top, bottom, left, right | `top` | |
-| `HeaderSubtitle` | text |  | `5 min · Updated today` | |
-| `ShowActionButton` | boolean |  | `true` | |
-| `ShowSecondaryButton` | boolean |  | `false` | |
+| `Title` | text |  | `Create project` | |
 
 ## Usage example
 
 ```tsx
 <Card
-  Size="sm"
-  Image="shown"
-  Border="bordered"
-  Layout="vertical"
-  Variant="default"
-  BodyText="Body copy describes the card content with a couple of lines of context."
-  FooterText="Footer note"
-  ShowHeader
-  HeaderTitle="Card title"
-  ImagePosition="top"
-  HeaderSubtitle="5 min · Updated today"
-  ShowActionButton
+  Title="Create project"
 />
 ```
 
