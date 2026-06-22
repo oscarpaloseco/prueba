@@ -1,7 +1,7 @@
 {
-  "name": "@prueba/design-system",
+  "name": "@shadcn/design-system",
   "version": "0.1.1",
-  "description": "Design system synced from prueba (DS Generator Repeat).",
+  "description": "Design system synced from Shadcn (DS Generator Repeat).",
   "main": "components/index.ts",
   "types": "components/index.ts",
   "peerDependencies": {
