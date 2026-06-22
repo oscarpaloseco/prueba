@@ -19,7 +19,6 @@ Import `tokens.css` once at your app root — then reference any token as
 | `opacity.*` | Named opacity levels. |
 | `spacing.*` | Margin, padding and gap values from the spacing scale. |
 | `typography.*` | Font family, size, weight, line-height and letter-spacing. |
-| `semanticColors.*` | — |
 
 ## Grid
 
@@ -27,30 +26,38 @@ _Breakpoints, gutters, margins and column counts._
 
 | CSS variable | Value |
 |-------------|-------|
-| `--ds-grid-gutter-lg` | `{sizes.scale.2xl}` |
+| `--ds-grid-gutter-lg` | `{sizes.scale.8}` |
 | `--ds-grid-gutter-lg--type` | `dimension` |
-| `--ds-grid-gutter-lg--value` | `{sizes.scale.2xl}` |
-| `--ds-grid-gutter-md` | `{sizes.scale.xl}` |
+| `--ds-grid-gutter-lg--value` | `{sizes.scale.8}` |
+| `--ds-grid-gutter-lg--description` | `shadcn-adjacent (not a shadcn token — editable base for your system).` |
+| `--ds-grid-gutter-md` | `{sizes.scale.6}` |
 | `--ds-grid-gutter-md--type` | `dimension` |
-| `--ds-grid-gutter-md--value` | `{sizes.scale.xl}` |
-| `--ds-grid-gutter-sm` | `{sizes.scale.lg}` |
+| `--ds-grid-gutter-md--value` | `{sizes.scale.6}` |
+| `--ds-grid-gutter-md--description` | `shadcn-adjacent (not a shadcn token — editable base for your system).` |
+| `--ds-grid-gutter-sm` | `{sizes.scale.4}` |
 | `--ds-grid-gutter-sm--type` | `dimension` |
-| `--ds-grid-gutter-sm--value` | `{sizes.scale.lg}` |
-| `--ds-grid-gutter-xl` | `{sizes.scale.2xl}` |
-| `--ds-grid-gutter-xl--type` | `dimension` |
-| `--ds-grid-gutter-xl--value` | `{sizes.scale.2xl}` |
-| `--ds-grid-margin-lg` | `{sizes.scale.3xl}` |
+| `--ds-grid-gutter-sm--value` | `{sizes.scale.4}` |
+| `--ds-grid-gutter-sm--description` | `shadcn-adjacent (not a shadcn token — editable base for your system).` |
+| `--ds-grid-gutter-xlg` | `{sizes.scale.8}` |
+| `--ds-grid-gutter-xlg--type` | `dimension` |
+| `--ds-grid-gutter-xlg--value` | `{sizes.scale.8}` |
+| `--ds-grid-gutter-xlg--description` | `shadcn-adjacent (not a shadcn token — editable base for your system).` |
+| `--ds-grid-margin-lg` | `{sizes.scale.8}` |
 | `--ds-grid-margin-lg--type` | `dimension` |
-| `--ds-grid-margin-lg--value` | `{sizes.scale.3xl}` |
-| `--ds-grid-margin-md` | `{sizes.scale.3xl}` |
+| `--ds-grid-margin-lg--value` | `{sizes.scale.8}` |
+| `--ds-grid-margin-lg--description` | `shadcn-adjacent (not a shadcn token — editable base for your system).` |
+| `--ds-grid-margin-md` | `{sizes.scale.6}` |
 | `--ds-grid-margin-md--type` | `dimension` |
-| `--ds-grid-margin-md--value` | `{sizes.scale.3xl}` |
-| `--ds-grid-margin-sm` | `{sizes.scale.lg}` |
+| `--ds-grid-margin-md--value` | `{sizes.scale.6}` |
+| `--ds-grid-margin-md--description` | `shadcn-adjacent (not a shadcn token — editable base for your system).` |
+| `--ds-grid-margin-sm` | `{sizes.scale.4}` |
 | `--ds-grid-margin-sm--type` | `dimension` |
-| `--ds-grid-margin-sm--value` | `{sizes.scale.lg}` |
-| `--ds-grid-margin-xl` | `{sizes.scale.4xl}` |
-| `--ds-grid-margin-xl--type` | `dimension` |
-| `--ds-grid-margin-xl--value` | `{sizes.scale.4xl}` |
+| `--ds-grid-margin-sm--value` | `{sizes.scale.4}` |
+| `--ds-grid-margin-sm--description` | `shadcn-adjacent (not a shadcn token — editable base for your system).` |
+| `--ds-grid-margin-xlg` | `{sizes.scale.8}` |
+| `--ds-grid-margin-xlg--type` | `dimension` |
+| `--ds-grid-margin-xlg--value` | `{sizes.scale.8}` |
+| `--ds-grid-margin-xlg--description` | `shadcn-adjacent (not a shadcn token — editable base for your system).` |
 | `--ds-grid-columns-lg` | `12` |
 | `--ds-grid-columns-lg--type` | `number` |
 | `--ds-grid-columns-lg--value` | `12` |
@@ -60,9 +67,12 @@ _Breakpoints, gutters, margins and column counts._
 | `--ds-grid-columns-sm` | `4` |
 | `--ds-grid-columns-sm--type` | `number` |
 | `--ds-grid-columns-sm--value` | `4` |
-| `--ds-grid-columns-xl` | `12` |
-| `--ds-grid-columns-xl--type` | `number` |
-| `--ds-grid-columns-xl--value` | `12` |
+| `--ds-grid-columns-max` | `12` |
+| `--ds-grid-columns-max--type` | `number` |
+| `--ds-grid-columns-max--value` | `12` |
+| `--ds-grid-columns-xlg` | `12` |
+| `--ds-grid-columns-xlg--type` | `number` |
+| `--ds-grid-columns-xlg--value` | `12` |
 | `--ds-grid-breakpoints-lg` | `1024px` |
 | `--ds-grid-breakpoints-lg--type` | `dimension` |
 | `--ds-grid-breakpoints-lg--value` | `1024px` |
@@ -72,9 +82,12 @@ _Breakpoints, gutters, margins and column counts._
 | `--ds-grid-breakpoints-sm` | `640px` |
 | `--ds-grid-breakpoints-sm--type` | `dimension` |
 | `--ds-grid-breakpoints-sm--value` | `640px` |
-| `--ds-grid-breakpoints-xl` | `1280px` |
-| `--ds-grid-breakpoints-xl--type` | `dimension` |
-| `--ds-grid-breakpoints-xl--value` | `1280px` |
+| `--ds-grid-breakpoints-max` | `1536px` |
+| `--ds-grid-breakpoints-max--type` | `dimension` |
+| `--ds-grid-breakpoints-max--value` | `1536px` |
+| `--ds-grid-breakpoints-xlg` | `1280px` |
+| `--ds-grid-breakpoints-xlg--type` | `dimension` |
+| `--ds-grid-breakpoints-xlg--value` | `1280px` |
 
 ## Icon (glyph colour)
 
@@ -82,15 +95,15 @@ _Fill colour for SVG glyphs and icon sprites._
 
 | CSS variable | Value |
 |-------------|-------|
-| `--ds-icon-lg` | `{sizes.scale.3xl}` |
+| `--ds-icon-lg` | `24px` |
 | `--ds-icon-lg--type` | `dimension` |
-| `--ds-icon-lg--value` | `{sizes.scale.3xl}` |
-| `--ds-icon-md` | `{sizes.scale.2xl}` |
+| `--ds-icon-lg--value` | `24px` |
+| `--ds-icon-md` | `20px` |
 | `--ds-icon-md--type` | `dimension` |
-| `--ds-icon-md--value` | `{sizes.scale.2xl}` |
-| `--ds-icon-sm` | `{sizes.scale.xl}` |
+| `--ds-icon-md--value` | `20px` |
+| `--ds-icon-sm` | `16px` |
 | `--ds-icon-sm--type` | `dimension` |
-| `--ds-icon-sm--value` | `{sizes.scale.xl}` |
+| `--ds-icon-sm--value` | `16px` |
 
 ## Sizes
 
@@ -98,78 +111,66 @@ _Primitive size scale (dimensions, icon sizes)._
 
 | CSS variable | Value |
 |-------------|-------|
-| `--ds-sizes-scale-lg` | `12px` |
-| `--ds-sizes-scale-lg--type` | `dimension` |
-| `--ds-sizes-scale-lg--value` | `12px` |
-| `--ds-sizes-scale-md` | `10px` |
-| `--ds-sizes-scale-md--type` | `dimension` |
-| `--ds-sizes-scale-md--value` | `10px` |
-| `--ds-sizes-scale-sm` | `8px` |
-| `--ds-sizes-scale-sm--type` | `dimension` |
-| `--ds-sizes-scale-sm--value` | `8px` |
-| `--ds-sizes-scale-xl` | `16px` |
-| `--ds-sizes-scale-xl--type` | `dimension` |
-| `--ds-sizes-scale-xl--value` | `16px` |
-| `--ds-sizes-scale-xs` | `6px` |
-| `--ds-sizes-scale-xs--type` | `dimension` |
-| `--ds-sizes-scale-xs--value` | `6px` |
-| `--ds-sizes-scale-2xl` | `20px` |
-| `--ds-sizes-scale-2xl--type` | `dimension` |
-| `--ds-sizes-scale-2xl--value` | `20px` |
-| `--ds-sizes-scale-2xs` | `4px` |
-| `--ds-sizes-scale-2xs--type` | `dimension` |
-| `--ds-sizes-scale-2xs--value` | `4px` |
-| `--ds-sizes-scale-3xl` | `24px` |
-| `--ds-sizes-scale-3xl--type` | `dimension` |
-| `--ds-sizes-scale-3xl--value` | `24px` |
-| `--ds-sizes-scale-3xs` | `3px` |
-| `--ds-sizes-scale-3xs--type` | `dimension` |
-| `--ds-sizes-scale-3xs--value` | `3px` |
-| `--ds-sizes-scale-4xl` | `32px` |
-| `--ds-sizes-scale-4xl--type` | `dimension` |
-| `--ds-sizes-scale-4xl--value` | `32px` |
-| `--ds-sizes-scale-4xs` | `2px` |
-| `--ds-sizes-scale-4xs--type` | `dimension` |
-| `--ds-sizes-scale-4xs--value` | `2px` |
-| `--ds-sizes-scale-5xl` | `48px` |
-| `--ds-sizes-scale-5xl--type` | `dimension` |
-| `--ds-sizes-scale-5xl--value` | `48px` |
-| `--ds-sizes-scale-5xs` | `1px` |
-| `--ds-sizes-scale-5xs--type` | `dimension` |
-| `--ds-sizes-scale-5xs--value` | `1px` |
-| `--ds-sizes-scale-6xl` | `64px` |
-| `--ds-sizes-scale-6xl--type` | `dimension` |
-| `--ds-sizes-scale-6xl--value` | `64px` |
-| `--ds-sizes-scale-7xl` | `80px` |
-| `--ds-sizes-scale-7xl--type` | `dimension` |
-| `--ds-sizes-scale-7xl--value` | `80px` |
-| `--ds-sizes-scale-8xl` | `96px` |
-| `--ds-sizes-scale-8xl--type` | `dimension` |
-| `--ds-sizes-scale-8xl--value` | `96px` |
-| `--ds-sizes-scale-9xl` | `128px` |
-| `--ds-sizes-scale-9xl--type` | `dimension` |
-| `--ds-sizes-scale-9xl--value` | `128px` |
-| `--ds-sizes-scale-10xl` | `160px` |
-| `--ds-sizes-scale-10xl--type` | `dimension` |
-| `--ds-sizes-scale-10xl--value` | `160px` |
-| `--ds-sizes-scale-11xl` | `192px` |
-| `--ds-sizes-scale-11xl--type` | `dimension` |
-| `--ds-sizes-scale-11xl--value` | `192px` |
-| `--ds-sizes-scale-12xl` | `256px` |
-| `--ds-sizes-scale-12xl--type` | `dimension` |
-| `--ds-sizes-scale-12xl--value` | `256px` |
-| `--ds-sizes-scale-13xl` | `320px` |
-| `--ds-sizes-scale-13xl--type` | `dimension` |
-| `--ds-sizes-scale-13xl--value` | `320px` |
-| `--ds-sizes-scale-14xl` | `384px` |
-| `--ds-sizes-scale-14xl--type` | `dimension` |
-| `--ds-sizes-scale-14xl--value` | `384px` |
-| `--ds-sizes-scale-15xl` | `448px` |
-| `--ds-sizes-scale-15xl--type` | `dimension` |
-| `--ds-sizes-scale-15xl--value` | `448px` |
+| `--ds-sizes-scale-1` | `4px` |
+| `--ds-sizes-scale-1--type` | `dimension` |
+| `--ds-sizes-scale-1--value` | `4px` |
+| `--ds-sizes-scale-2` | `8px` |
+| `--ds-sizes-scale-2--type` | `dimension` |
+| `--ds-sizes-scale-2--value` | `8px` |
+| `--ds-sizes-scale-3` | `12px` |
+| `--ds-sizes-scale-3--type` | `dimension` |
+| `--ds-sizes-scale-3--value` | `12px` |
+| `--ds-sizes-scale-4` | `16px` |
+| `--ds-sizes-scale-4--type` | `dimension` |
+| `--ds-sizes-scale-4--value` | `16px` |
+| `--ds-sizes-scale-5` | `20px` |
+| `--ds-sizes-scale-5--type` | `dimension` |
+| `--ds-sizes-scale-5--value` | `20px` |
+| `--ds-sizes-scale-6` | `24px` |
+| `--ds-sizes-scale-6--type` | `dimension` |
+| `--ds-sizes-scale-6--value` | `24px` |
+| `--ds-sizes-scale-7` | `28px` |
+| `--ds-sizes-scale-7--type` | `dimension` |
+| `--ds-sizes-scale-7--value` | `28px` |
+| `--ds-sizes-scale-8` | `32px` |
+| `--ds-sizes-scale-8--type` | `dimension` |
+| `--ds-sizes-scale-8--value` | `32px` |
+| `--ds-sizes-scale-9` | `36px` |
+| `--ds-sizes-scale-9--type` | `dimension` |
+| `--ds-sizes-scale-9--value` | `36px` |
+| `--ds-sizes-scale-10` | `40px` |
+| `--ds-sizes-scale-10--type` | `dimension` |
+| `--ds-sizes-scale-10--value` | `40px` |
+| `--ds-sizes-scale-11` | `44px` |
+| `--ds-sizes-scale-11--type` | `dimension` |
+| `--ds-sizes-scale-11--value` | `44px` |
+| `--ds-sizes-scale-12` | `48px` |
+| `--ds-sizes-scale-12--type` | `dimension` |
+| `--ds-sizes-scale-12--value` | `48px` |
+| `--ds-sizes-scale-14` | `56px` |
+| `--ds-sizes-scale-14--type` | `dimension` |
+| `--ds-sizes-scale-14--value` | `56px` |
+| `--ds-sizes-scale-16` | `64px` |
+| `--ds-sizes-scale-16--type` | `dimension` |
+| `--ds-sizes-scale-16--value` | `64px` |
+| `--ds-sizes-scale-20` | `80px` |
+| `--ds-sizes-scale-20--type` | `dimension` |
+| `--ds-sizes-scale-20--value` | `80px` |
+| `--ds-sizes-scale-24` | `96px` |
+| `--ds-sizes-scale-24--type` | `dimension` |
+| `--ds-sizes-scale-24--value` | `96px` |
 | `--ds-sizes-scale-none` | `0px` |
 | `--ds-sizes-scale-none--type` | `dimension` |
 | `--ds-sizes-scale-none--value` | `0px` |
+| `--ds-sizes-components-lg` | `{sizes.scale.10}` |
+| `--ds-sizes-components-lg--type` | `dimension` |
+| `--ds-sizes-components-lg--value` | `{sizes.scale.10}` |
+| `--ds-sizes-components-md` | `{sizes.scale.9}` |
+| `--ds-sizes-components-md--type` | `dimension` |
+| `--ds-sizes-components-md--value` | `{sizes.scale.9}` |
+| `--ds-sizes-components-sm` | `{sizes.scale.8}` |
+| `--ds-sizes-components-sm--type` | `dimension` |
+| `--ds-sizes-components-sm--value` | `{sizes.scale.8}` |
 
 ## colors
 
@@ -177,19 +178,18 @@ _Primitive size scale (dimensions, icon sizes)._
 | CSS variable | Value |
 |-------------|-------|
 | `--ds-colors-red-name` | `red` |
-| `--ds-colors-red-ramp-50` | `#fff8f8` |
-| `--ds-colors-red-ramp-100` | `#ffbeb8` |
-| `--ds-colors-red-ramp-200` | `#ff8b83` |
-| `--ds-colors-red-ramp-300` | `#f9655f` |
-| `--ds-colors-red-ramp-400` | `#f24d4b` |
+| `--ds-colors-red-ramp-50` | `#fef2f2` |
+| `--ds-colors-red-ramp-100` | `#fee2e2` |
+| `--ds-colors-red-ramp-200` | `#fecaca` |
+| `--ds-colors-red-ramp-300` | `#fca5a5` |
+| `--ds-colors-red-ramp-400` | `#f87171` |
 | `--ds-colors-red-ramp-500` | `#ef4444` |
-| `--ds-colors-red-ramp-600` | `#e64141` |
-| `--ds-colors-red-ramp-700` | `#ca3938` |
-| `--ds-colors-red-ramp-800` | `#9e2b2a` |
-| `--ds-colors-red-ramp-900` | `#641818` |
-| `--ds-colors-red-ramp-950` | `#220504` |
-| `--ds-colors-red-seed` | `#ef4444` |
-| `--ds-colors-red-source` | `builtin` |
+| `--ds-colors-red-ramp-600` | `#dc2626` |
+| `--ds-colors-red-ramp-700` | `#b91c1c` |
+| `--ds-colors-red-ramp-800` | `#991b1b` |
+| `--ds-colors-red-ramp-900` | `#7f1d1d` |
+| `--ds-colors-red-ramp-950` | `#450a0a` |
+| `--ds-colors-red-source` | `custom` |
 | `--ds-colors-blue-name` | `blue` |
 | `--ds-colors-blue-ramp-50` | `#eff6ff` |
 | `--ds-colors-blue-ramp-100` | `#dbeafe` |
@@ -202,7 +202,7 @@ _Primitive size scale (dimensions, icon sizes)._
 | `--ds-colors-blue-ramp-800` | `#1e40af` |
 | `--ds-colors-blue-ramp-900` | `#1e3a8a` |
 | `--ds-colors-blue-ramp-950` | `#172554` |
-| `--ds-colors-blue-source` | `builtin` |
+| `--ds-colors-blue-source` | `custom` |
 | `--ds-colors-gray-name` | `gray` |
 | `--ds-colors-gray-ramp-50` | `#f9fafb` |
 | `--ds-colors-gray-ramp-100` | `#f3f4f6` |
@@ -254,7 +254,7 @@ _Primitive size scale (dimensions, icon sizes)._
 | `--ds-colors-green-ramp-800` | `#166534` |
 | `--ds-colors-green-ramp-900` | `#14532d` |
 | `--ds-colors-green-ramp-950` | `#052e16` |
-| `--ds-colors-green-source` | `builtin` |
+| `--ds-colors-green-source` | `custom` |
 | `--ds-colors-indigo-name` | `indigo` |
 | `--ds-colors-indigo-ramp-50` | `#eef2ff` |
 | `--ds-colors-indigo-ramp-100` | `#e0e7ff` |
@@ -280,7 +280,7 @@ _Primitive size scale (dimensions, icon sizes)._
 | `--ds-colors-orange-ramp-800` | `#9a3412` |
 | `--ds-colors-orange-ramp-900` | `#7c2d12` |
 | `--ds-colors-orange-ramp-950` | `#431407` |
-| `--ds-colors-orange-source` | `builtin` |
+| `--ds-colors-orange-source` | `custom` |
 | `--ds-colors-purple-name` | `purple` |
 | `--ds-colors-purple-ramp-50` | `#faf5ff` |
 | `--ds-colors-purple-ramp-100` | `#f3e8ff` |
@@ -319,7 +319,21 @@ _Primitive size scale (dimensions, icon sizes)._
 | `--ds-colors-neutral-ramp-800` | `#262626` |
 | `--ds-colors-neutral-ramp-900` | `#171717` |
 | `--ds-colors-neutral-ramp-950` | `#0a0a0a` |
-| `--ds-colors-neutral-source` | `builtin` |
+| `--ds-colors-neutral-source` | `custom` |
+| `--ds-colors-turquesa-name` | `turquesa` |
+| `--ds-colors-turquesa-ramp-50` | `#ebfffe` |
+| `--ds-colors-turquesa-ramp-100` | `#ddfffd` |
+| `--ds-colors-turquesa-ramp-200` | `#aafffc` |
+| `--ds-colors-turquesa-ramp-300` | `#75f6f3` |
+| `--ds-colors-turquesa-ramp-400` | `#57efec` |
+| `--ds-colors-turquesa-ramp-500` | `#4bece9` |
+| `--ds-colors-turquesa-ramp-600` | `#3ad9d6` |
+| `--ds-colors-turquesa-ramp-700` | `#00a19f` |
+| `--ds-colors-turquesa-ramp-800` | `#00504f` |
+| `--ds-colors-turquesa-ramp-900` | `#002121` |
+| `--ds-colors-turquesa-ramp-950` | `#001313` |
+| `--ds-colors-turquesa-seed` | `#4bece9` |
+| `--ds-colors-turquesa-source` | `custom` |
 
 ## Motion
 
@@ -327,26 +341,18 @@ _Duration and easing values for transitions._
 
 | CSS variable | Value |
 |-------------|-------|
-| `--ds-motion-easing-linear--type` | `cubicBezier` |
-| `--ds-motion-easing-ease-in--type` | `cubicBezier` |
-| `--ds-motion-easing-ease-out--type` | `cubicBezier` |
-| `--ds-motion-easing-emphasized--type` | `cubicBezier` |
-| `--ds-motion-easing-ease-in-out--type` | `cubicBezier` |
-| `--ds-motion-duration-fast` | `120ms` |
+| `--ds-motion-easing-in--type` | `cubicBezier` |
+| `--ds-motion-easing-out--type` | `cubicBezier` |
+| `--ds-motion-easing-in-out--type` | `cubicBezier` |
+| `--ds-motion-duration-fast` | `150ms` |
 | `--ds-motion-duration-fast--type` | `duration` |
-| `--ds-motion-duration-fast--value` | `120ms` |
-| `--ds-motion-duration-slow` | `400ms` |
+| `--ds-motion-duration-fast--value` | `150ms` |
+| `--ds-motion-duration-slow` | `300ms` |
 | `--ds-motion-duration-slow--type` | `duration` |
-| `--ds-motion-duration-slow--value` | `400ms` |
-| `--ds-motion-duration-medium` | `240ms` |
-| `--ds-motion-duration-medium--type` | `duration` |
-| `--ds-motion-duration-medium--value` | `240ms` |
-| `--ds-motion-duration-slower` | `600ms` |
-| `--ds-motion-duration-slower--type` | `duration` |
-| `--ds-motion-duration-slower--value` | `600ms` |
-| `--ds-motion-duration-instant` | `0ms` |
-| `--ds-motion-duration-instant--type` | `duration` |
-| `--ds-motion-duration-instant--value` | `0ms` |
+| `--ds-motion-duration-slow--value` | `300ms` |
+| `--ds-motion-duration-normal` | `200ms` |
+| `--ds-motion-duration-normal--type` | `duration` |
+| `--ds-motion-duration-normal--value` | `200ms` |
 
 ## Border radius
 
@@ -354,33 +360,33 @@ _Corner radius tokens for containers and controls._
 
 | CSS variable | Value |
 |-------------|-------|
-| `--ds-radius-lg` | `{sizes.scale.lg}` |
+| `--ds-radius-lg` | `10px` |
 | `--ds-radius-lg--type` | `dimension` |
-| `--ds-radius-lg--value` | `{sizes.scale.lg}` |
-| `--ds-radius-md` | `{sizes.scale.sm}` |
+| `--ds-radius-lg--value` | `10px` |
+| `--ds-radius-lg--description` | `--radius (shadcn v4 base = 0.625rem).` |
+| `--ds-radius-md` | `8px` |
 | `--ds-radius-md--type` | `dimension` |
-| `--ds-radius-md--value` | `{sizes.scale.sm}` |
-| `--ds-radius-sm` | `{sizes.scale.xs}` |
+| `--ds-radius-md--value` | `8px` |
+| `--ds-radius-md--description` | `calc(--radius - 2px).` |
+| `--ds-radius-sm` | `6px` |
 | `--ds-radius-sm--type` | `dimension` |
-| `--ds-radius-sm--value` | `{sizes.scale.xs}` |
-| `--ds-radius-xl` | `{sizes.scale.xl}` |
+| `--ds-radius-sm--value` | `6px` |
+| `--ds-radius-sm--description` | `calc(--radius - 4px).` |
+| `--ds-radius-xl` | `14px` |
 | `--ds-radius-xl--type` | `dimension` |
-| `--ds-radius-xl--value` | `{sizes.scale.xl}` |
-| `--ds-radius-xs` | `{sizes.scale.2xs}` |
-| `--ds-radius-xs--type` | `dimension` |
-| `--ds-radius-xs--value` | `{sizes.scale.2xs}` |
-| `--ds-radius-2xl` | `{sizes.scale.3xl}` |
+| `--ds-radius-xl--value` | `14px` |
+| `--ds-radius-xl--description` | `calc(--radius + 4px).` |
+| `--ds-radius-2xl` | `18px` |
 | `--ds-radius-2xl--type` | `dimension` |
-| `--ds-radius-2xl--value` | `{sizes.scale.3xl}` |
-| `--ds-radius-3xl` | `{sizes.scale.4xl}` |
-| `--ds-radius-3xl--type` | `dimension` |
-| `--ds-radius-3xl--value` | `{sizes.scale.4xl}` |
+| `--ds-radius-2xl--value` | `18px` |
 | `--ds-radius-full` | `9999px` |
 | `--ds-radius-full--type` | `dimension` |
 | `--ds-radius-full--value` | `9999px` |
+| `--ds-radius-full--description` | `Pill / circle.` |
 | `--ds-radius-none` | `0px` |
 | `--ds-radius-none--type` | `dimension` |
 | `--ds-radius-none--value` | `0px` |
+| `--ds-radius-none--description` | `Square corners.` |
 
 ## Shadow
 
@@ -388,16 +394,17 @@ _Box-shadow elevation levels._
 
 | CSS variable | Value |
 |-------------|-------|
-| `--ds-shadow-color` | `{colors.neutral.dark.950}` |
+| `--ds-shadow-color` | `#000000` |
 | `--ds-shadow-color--type` | `color` |
-| `--ds-shadow-color--value` | `{colors.neutral.dark.950}` |
+| `--ds-shadow-color--value` | `#000000` |
 | `--ds-shadow-levels-lg--type` | `shadow` |
+| `--ds-shadow-levels-lg--description` | `Dialogs, sheets.` |
 | `--ds-shadow-levels-md--type` | `shadow` |
+| `--ds-shadow-levels-md--description` | `Popovers, dropdowns, hover-cards.` |
 | `--ds-shadow-levels-sm--type` | `shadow` |
-| `--ds-shadow-levels-xl--type` | `shadow` |
-| `--ds-shadow-levels-xs--type` | `shadow` |
-| `--ds-shadow-levels-2xl--type` | `shadow` |
+| `--ds-shadow-levels-sm--description` | `Subtle — cards, inputs.` |
 | `--ds-shadow-levels-none--type` | `shadow` |
+| `--ds-shadow-levels-none--description` | `No shadow.` |
 
 ## Z-index
 
@@ -405,30 +412,30 @@ _Stacking order levels._
 
 | CSS variable | Value |
 |-------------|-------|
-| `--ds-zIndex-10` | `10` |
-| `--ds-zIndex-10--type` | `number` |
-| `--ds-zIndex-10--value` | `10` |
-| `--ds-zIndex-10--description` | `Slight elevation` |
-| `--ds-zIndex-20` | `20` |
-| `--ds-zIndex-20--type` | `number` |
-| `--ds-zIndex-20--value` | `20` |
-| `--ds-zIndex-20--description` | `Sticky headers` |
-| `--ds-zIndex-30` | `30` |
-| `--ds-zIndex-30--type` | `number` |
-| `--ds-zIndex-30--value` | `30` |
-| `--ds-zIndex-30--description` | `Light overlays` |
-| `--ds-zIndex-40` | `40` |
-| `--ds-zIndex-40--type` | `number` |
-| `--ds-zIndex-40--value` | `40` |
-| `--ds-zIndex-40--description` | `Dialogs & modals` |
-| `--ds-zIndex-50` | `50` |
-| `--ds-zIndex-50--type` | `number` |
-| `--ds-zIndex-50--value` | `50` |
-| `--ds-zIndex-50--description` | `Tooltips & popovers` |
-| `--ds-zIndex-9999` | `9999` |
-| `--ds-zIndex-9999--type` | `number` |
-| `--ds-zIndex-9999--value` | `9999` |
-| `--ds-zIndex-9999--description` | `Global loaders & critical alerts` |
+| `--ds-zIndex-modal` | `300` |
+| `--ds-zIndex-modal--type` | `number` |
+| `--ds-zIndex-modal--value` | `300` |
+| `--ds-zIndex-modal--description` | `shadcn-adjacent (not a shadcn token — editable base for your system).` |
+| `--ds-zIndex-sticky` | `100` |
+| `--ds-zIndex-sticky--type` | `number` |
+| `--ds-zIndex-sticky--value` | `100` |
+| `--ds-zIndex-sticky--description` | `shadcn-adjacent (not a shadcn token — editable base for your system).` |
+| `--ds-zIndex-overlay` | `200` |
+| `--ds-zIndex-overlay--type` | `number` |
+| `--ds-zIndex-overlay--value` | `200` |
+| `--ds-zIndex-overlay--description` | `shadcn-adjacent (not a shadcn token — editable base for your system).` |
+| `--ds-zIndex-popover` | `400` |
+| `--ds-zIndex-popover--type` | `number` |
+| `--ds-zIndex-popover--value` | `400` |
+| `--ds-zIndex-popover--description` | `shadcn-adjacent (not a shadcn token — editable base for your system).` |
+| `--ds-zIndex-tooltip` | `500` |
+| `--ds-zIndex-tooltip--type` | `number` |
+| `--ds-zIndex-tooltip--value` | `500` |
+| `--ds-zIndex-tooltip--description` | `shadcn-adjacent (not a shadcn token — editable base for your system).` |
+| `--ds-zIndex-dropdown` | `50` |
+| `--ds-zIndex-dropdown--type` | `number` |
+| `--ds-zIndex-dropdown--value` | `50` |
+| `--ds-zIndex-dropdown--description` | `shadcn-adjacent (not a shadcn token — editable base for your system).` |
 
 ## Opacity
 
@@ -439,30 +446,43 @@ _Named opacity levels._
 | `--ds-opacity-0` | `0` |
 | `--ds-opacity-0--type` | `number` |
 | `--ds-opacity-0--value` | `0` |
-| `--ds-opacity-4` | `0.04` |
-| `--ds-opacity-4--type` | `number` |
-| `--ds-opacity-4--value` | `0.04` |
-| `--ds-opacity-8` | `0.08` |
-| `--ds-opacity-8--type` | `number` |
-| `--ds-opacity-8--value` | `0.08` |
-| `--ds-opacity-16` | `0.16` |
-| `--ds-opacity-16--type` | `number` |
-| `--ds-opacity-16--value` | `0.16` |
-| `--ds-opacity-32` | `0.32` |
-| `--ds-opacity-32--type` | `number` |
-| `--ds-opacity-32--value` | `0.32` |
-| `--ds-opacity-48` | `0.48` |
-| `--ds-opacity-48--type` | `number` |
-| `--ds-opacity-48--value` | `0.48` |
-| `--ds-opacity-64` | `0.64` |
-| `--ds-opacity-64--type` | `number` |
-| `--ds-opacity-64--value` | `0.64` |
-| `--ds-opacity-80` | `0.8` |
-| `--ds-opacity-80--type` | `number` |
-| `--ds-opacity-80--value` | `0.8` |
+| `--ds-opacity-0--description` | `shadcn-adjacent (not a shadcn token — editable base for your system).` |
+| `--ds-opacity-5` | `0.05` |
+| `--ds-opacity-5--type` | `number` |
+| `--ds-opacity-5--value` | `0.05` |
+| `--ds-opacity-5--description` | `shadcn-adjacent (not a shadcn token — editable base for your system).` |
+| `--ds-opacity-10` | `0.1` |
+| `--ds-opacity-10--type` | `number` |
+| `--ds-opacity-10--value` | `0.1` |
+| `--ds-opacity-10--description` | `shadcn-adjacent (not a shadcn token — editable base for your system).` |
+| `--ds-opacity-15` | `0.15` |
+| `--ds-opacity-15--type` | `number` |
+| `--ds-opacity-15--value` | `0.15` |
+| `--ds-opacity-15--description` | `shadcn-adjacent (not a shadcn token — editable base for your system).` |
+| `--ds-opacity-20` | `0.2` |
+| `--ds-opacity-20--type` | `number` |
+| `--ds-opacity-20--value` | `0.2` |
+| `--ds-opacity-20--description` | `shadcn-adjacent (not a shadcn token — editable base for your system).` |
+| `--ds-opacity-25` | `0.25` |
+| `--ds-opacity-25--type` | `number` |
+| `--ds-opacity-25--value` | `0.25` |
+| `--ds-opacity-25--description` | `shadcn-adjacent (not a shadcn token — editable base for your system).` |
+| `--ds-opacity-50` | `0.5` |
+| `--ds-opacity-50--type` | `number` |
+| `--ds-opacity-50--value` | `0.5` |
+| `--ds-opacity-50--description` | `shadcn-adjacent (not a shadcn token — editable base for your system).` |
+| `--ds-opacity-75` | `0.75` |
+| `--ds-opacity-75--type` | `number` |
+| `--ds-opacity-75--value` | `0.75` |
+| `--ds-opacity-75--description` | `shadcn-adjacent (not a shadcn token — editable base for your system).` |
+| `--ds-opacity-90` | `0.9` |
+| `--ds-opacity-90--type` | `number` |
+| `--ds-opacity-90--value` | `0.9` |
+| `--ds-opacity-90--description` | `shadcn-adjacent (not a shadcn token — editable base for your system).` |
 | `--ds-opacity-100` | `1` |
 | `--ds-opacity-100--type` | `number` |
 | `--ds-opacity-100--value` | `1` |
+| `--ds-opacity-100--description` | `shadcn-adjacent (not a shadcn token — editable base for your system).` |
 
 ## Spacing
 
@@ -470,30 +490,57 @@ _Margin, padding and gap values from the spacing scale._
 
 | CSS variable | Value |
 |-------------|-------|
-| `--ds-spacing-lg` | `{sizes.scale.xl}` |
-| `--ds-spacing-lg--type` | `dimension` |
-| `--ds-spacing-lg--value` | `{sizes.scale.xl}` |
-| `--ds-spacing-md` | `{sizes.scale.lg}` |
-| `--ds-spacing-md--type` | `dimension` |
-| `--ds-spacing-md--value` | `{sizes.scale.lg}` |
-| `--ds-spacing-sm` | `{sizes.scale.sm}` |
-| `--ds-spacing-sm--type` | `dimension` |
-| `--ds-spacing-sm--value` | `{sizes.scale.sm}` |
-| `--ds-spacing-xl` | `{sizes.scale.3xl}` |
-| `--ds-spacing-xl--type` | `dimension` |
-| `--ds-spacing-xl--value` | `{sizes.scale.3xl}` |
-| `--ds-spacing-xs` | `{sizes.scale.xs}` |
-| `--ds-spacing-xs--type` | `dimension` |
-| `--ds-spacing-xs--value` | `{sizes.scale.xs}` |
-| `--ds-spacing-2xl` | `{sizes.scale.4xl}` |
-| `--ds-spacing-2xl--type` | `dimension` |
-| `--ds-spacing-2xl--value` | `{sizes.scale.4xl}` |
-| `--ds-spacing-2xs` | `{sizes.scale.2xs}` |
-| `--ds-spacing-2xs--type` | `dimension` |
-| `--ds-spacing-2xs--value` | `{sizes.scale.2xs}` |
-| `--ds-spacing-3xl` | `{sizes.scale.5xl}` |
-| `--ds-spacing-3xl--type` | `dimension` |
-| `--ds-spacing-3xl--value` | `{sizes.scale.5xl}` |
+| `--ds-spacing-1` | `{sizes.scale.1}` |
+| `--ds-spacing-1--type` | `dimension` |
+| `--ds-spacing-1--value` | `{sizes.scale.1}` |
+| `--ds-spacing-2` | `{sizes.scale.2}` |
+| `--ds-spacing-2--type` | `dimension` |
+| `--ds-spacing-2--value` | `{sizes.scale.2}` |
+| `--ds-spacing-3` | `{sizes.scale.3}` |
+| `--ds-spacing-3--type` | `dimension` |
+| `--ds-spacing-3--value` | `{sizes.scale.3}` |
+| `--ds-spacing-4` | `{sizes.scale.4}` |
+| `--ds-spacing-4--type` | `dimension` |
+| `--ds-spacing-4--value` | `{sizes.scale.4}` |
+| `--ds-spacing-5` | `{sizes.scale.5}` |
+| `--ds-spacing-5--type` | `dimension` |
+| `--ds-spacing-5--value` | `{sizes.scale.5}` |
+| `--ds-spacing-6` | `{sizes.scale.6}` |
+| `--ds-spacing-6--type` | `dimension` |
+| `--ds-spacing-6--value` | `{sizes.scale.6}` |
+| `--ds-spacing-7` | `{sizes.scale.7}` |
+| `--ds-spacing-7--type` | `dimension` |
+| `--ds-spacing-7--value` | `{sizes.scale.7}` |
+| `--ds-spacing-8` | `{sizes.scale.8}` |
+| `--ds-spacing-8--type` | `dimension` |
+| `--ds-spacing-8--value` | `{sizes.scale.8}` |
+| `--ds-spacing-9` | `{sizes.scale.9}` |
+| `--ds-spacing-9--type` | `dimension` |
+| `--ds-spacing-9--value` | `{sizes.scale.9}` |
+| `--ds-spacing-10` | `{sizes.scale.10}` |
+| `--ds-spacing-10--type` | `dimension` |
+| `--ds-spacing-10--value` | `{sizes.scale.10}` |
+| `--ds-spacing-11` | `{sizes.scale.11}` |
+| `--ds-spacing-11--type` | `dimension` |
+| `--ds-spacing-11--value` | `{sizes.scale.11}` |
+| `--ds-spacing-12` | `{sizes.scale.12}` |
+| `--ds-spacing-12--type` | `dimension` |
+| `--ds-spacing-12--value` | `{sizes.scale.12}` |
+| `--ds-spacing-14` | `{sizes.scale.14}` |
+| `--ds-spacing-14--type` | `dimension` |
+| `--ds-spacing-14--value` | `{sizes.scale.14}` |
+| `--ds-spacing-16` | `{sizes.scale.16}` |
+| `--ds-spacing-16--type` | `dimension` |
+| `--ds-spacing-16--value` | `{sizes.scale.16}` |
+| `--ds-spacing-20` | `{sizes.scale.20}` |
+| `--ds-spacing-20--type` | `dimension` |
+| `--ds-spacing-20--value` | `{sizes.scale.20}` |
+| `--ds-spacing-24` | `{sizes.scale.24}` |
+| `--ds-spacing-24--type` | `dimension` |
+| `--ds-spacing-24--value` | `{sizes.scale.24}` |
+| `--ds-spacing-none` | `{sizes.scale.none}` |
+| `--ds-spacing-none--type` | `dimension` |
+| `--ds-spacing-none--value` | `{sizes.scale.none}` |
 
 ## Typography
 
@@ -509,403 +556,196 @@ _Font family, size, weight, line-height and letter-spacing._
 | `--ds-typography--meta-stepsBelow` | `2` |
 | `--ds-typography-roles-body--meta-steps` | `3` |
 | `--ds-typography-roles-body--meta-nomenclature` | `tshirt` |
-| `--ds-typography-roles-body-steps-md-fontSize` | `{typography.scale.fontSize.350}` |
+| `--ds-typography-roles-body-steps-lg-fontSize` | `{typography.scale.fontSize.lg}` |
+| `--ds-typography-roles-body-steps-lg-fontSize--type` | `dimension` |
+| `--ds-typography-roles-body-steps-lg-fontSize--value` | `{typography.scale.fontSize.lg}` |
+| `--ds-typography-roles-body-steps-lg-fontWeight` | `{typography.weights.regular}` |
+| `--ds-typography-roles-body-steps-lg-fontWeight--type` | `fontWeight` |
+| `--ds-typography-roles-body-steps-lg-fontWeight--value` | `{typography.weights.regular}` |
+| `--ds-typography-roles-body-steps-lg-lineHeight` | `{typography.scale.lineHeight.lg}` |
+| `--ds-typography-roles-body-steps-lg-lineHeight--type` | `dimension` |
+| `--ds-typography-roles-body-steps-lg-lineHeight--value` | `{typography.scale.lineHeight.lg}` |
+| `--ds-typography-roles-body-steps-lg-letterSpacing` | `{typography.scale.letterSpacing.lg}` |
+| `--ds-typography-roles-body-steps-lg-letterSpacing--type` | `dimension` |
+| `--ds-typography-roles-body-steps-lg-letterSpacing--value` | `{typography.scale.letterSpacing.lg}` |
+| `--ds-typography-roles-body-steps-md-fontSize` | `{typography.scale.fontSize.base}` |
 | `--ds-typography-roles-body-steps-md-fontSize--type` | `dimension` |
-| `--ds-typography-roles-body-steps-md-fontSize--value` | `{typography.scale.fontSize.350}` |
+| `--ds-typography-roles-body-steps-md-fontSize--value` | `{typography.scale.fontSize.base}` |
 | `--ds-typography-roles-body-steps-md-fontWeight` | `{typography.weights.regular}` |
 | `--ds-typography-roles-body-steps-md-fontWeight--type` | `fontWeight` |
 | `--ds-typography-roles-body-steps-md-fontWeight--value` | `{typography.weights.regular}` |
-| `--ds-typography-roles-body-steps-md-lineHeight` | `{typography.scale.lineHeight.400}` |
+| `--ds-typography-roles-body-steps-md-lineHeight` | `{typography.scale.lineHeight.base}` |
 | `--ds-typography-roles-body-steps-md-lineHeight--type` | `dimension` |
-| `--ds-typography-roles-body-steps-md-lineHeight--value` | `{typography.scale.lineHeight.400}` |
-| `--ds-typography-roles-body-steps-md-letterSpacing` | `{typography.scale.letterSpacing.300}` |
+| `--ds-typography-roles-body-steps-md-lineHeight--value` | `{typography.scale.lineHeight.base}` |
+| `--ds-typography-roles-body-steps-md-letterSpacing` | `{typography.scale.letterSpacing.base}` |
 | `--ds-typography-roles-body-steps-md-letterSpacing--type` | `dimension` |
-| `--ds-typography-roles-body-steps-md-letterSpacing--value` | `{typography.scale.letterSpacing.300}` |
-| `--ds-typography-roles-body-steps-sm-fontSize` | `{typography.scale.fontSize.300}` |
+| `--ds-typography-roles-body-steps-md-letterSpacing--value` | `{typography.scale.letterSpacing.base}` |
+| `--ds-typography-roles-body-steps-sm-fontSize` | `{typography.scale.fontSize.sm}` |
 | `--ds-typography-roles-body-steps-sm-fontSize--type` | `dimension` |
-| `--ds-typography-roles-body-steps-sm-fontSize--value` | `{typography.scale.fontSize.300}` |
+| `--ds-typography-roles-body-steps-sm-fontSize--value` | `{typography.scale.fontSize.sm}` |
 | `--ds-typography-roles-body-steps-sm-fontWeight` | `{typography.weights.regular}` |
 | `--ds-typography-roles-body-steps-sm-fontWeight--type` | `fontWeight` |
 | `--ds-typography-roles-body-steps-sm-fontWeight--value` | `{typography.weights.regular}` |
-| `--ds-typography-roles-body-steps-sm-lineHeight` | `{typography.scale.lineHeight.300}` |
+| `--ds-typography-roles-body-steps-sm-lineHeight` | `{typography.scale.lineHeight.sm}` |
 | `--ds-typography-roles-body-steps-sm-lineHeight--type` | `dimension` |
-| `--ds-typography-roles-body-steps-sm-lineHeight--value` | `{typography.scale.lineHeight.300}` |
-| `--ds-typography-roles-body-steps-sm-letterSpacing` | `{typography.scale.letterSpacing.300}` |
+| `--ds-typography-roles-body-steps-sm-lineHeight--value` | `{typography.scale.lineHeight.sm}` |
+| `--ds-typography-roles-body-steps-sm-letterSpacing` | `{typography.scale.letterSpacing.sm}` |
 | `--ds-typography-roles-body-steps-sm-letterSpacing--type` | `dimension` |
-| `--ds-typography-roles-body-steps-sm-letterSpacing--value` | `{typography.scale.letterSpacing.300}` |
-| `--ds-typography-roles-body-steps-xs-fontSize` | `{typography.scale.fontSize.250}` |
-| `--ds-typography-roles-body-steps-xs-fontSize--type` | `dimension` |
-| `--ds-typography-roles-body-steps-xs-fontSize--value` | `{typography.scale.fontSize.250}` |
-| `--ds-typography-roles-body-steps-xs-fontWeight` | `{typography.weights.regular}` |
-| `--ds-typography-roles-body-steps-xs-fontWeight--type` | `fontWeight` |
-| `--ds-typography-roles-body-steps-xs-fontWeight--value` | `{typography.weights.regular}` |
-| `--ds-typography-roles-body-steps-xs-lineHeight` | `{typography.scale.lineHeight.250}` |
-| `--ds-typography-roles-body-steps-xs-lineHeight--type` | `dimension` |
-| `--ds-typography-roles-body-steps-xs-lineHeight--value` | `{typography.scale.lineHeight.250}` |
-| `--ds-typography-roles-body-steps-xs-letterSpacing` | `{typography.scale.letterSpacing.300}` |
-| `--ds-typography-roles-body-steps-xs-letterSpacing--type` | `dimension` |
-| `--ds-typography-roles-body-steps-xs-letterSpacing--value` | `{typography.scale.letterSpacing.300}` |
-| `--ds-typography-roles-body-steps-md-semibold-fontSize` | `{typography.scale.fontSize.350}` |
+| `--ds-typography-roles-body-steps-sm-letterSpacing--value` | `{typography.scale.letterSpacing.sm}` |
+| `--ds-typography-roles-body-steps-lg-semibold-fontSize` | `{typography.scale.fontSize.lg}` |
+| `--ds-typography-roles-body-steps-lg-semibold-fontSize--type` | `dimension` |
+| `--ds-typography-roles-body-steps-lg-semibold-fontSize--value` | `{typography.scale.fontSize.lg}` |
+| `--ds-typography-roles-body-steps-lg-semibold-fontWeight` | `{typography.weights.semibold}` |
+| `--ds-typography-roles-body-steps-lg-semibold-fontWeight--type` | `fontWeight` |
+| `--ds-typography-roles-body-steps-lg-semibold-fontWeight--value` | `{typography.weights.semibold}` |
+| `--ds-typography-roles-body-steps-lg-semibold-lineHeight` | `{typography.scale.lineHeight.lg}` |
+| `--ds-typography-roles-body-steps-lg-semibold-lineHeight--type` | `dimension` |
+| `--ds-typography-roles-body-steps-lg-semibold-lineHeight--value` | `{typography.scale.lineHeight.lg}` |
+| `--ds-typography-roles-body-steps-lg-semibold-letterSpacing` | `{typography.scale.letterSpacing.lg}` |
+| `--ds-typography-roles-body-steps-lg-semibold-letterSpacing--type` | `dimension` |
+| `--ds-typography-roles-body-steps-lg-semibold-letterSpacing--value` | `{typography.scale.letterSpacing.lg}` |
+| `--ds-typography-roles-body-steps-md-semibold-fontSize` | `{typography.scale.fontSize.base}` |
 | `--ds-typography-roles-body-steps-md-semibold-fontSize--type` | `dimension` |
-| `--ds-typography-roles-body-steps-md-semibold-fontSize--value` | `{typography.scale.fontSize.350}` |
+| `--ds-typography-roles-body-steps-md-semibold-fontSize--value` | `{typography.scale.fontSize.base}` |
 | `--ds-typography-roles-body-steps-md-semibold-fontWeight` | `{typography.weights.semibold}` |
 | `--ds-typography-roles-body-steps-md-semibold-fontWeight--type` | `fontWeight` |
 | `--ds-typography-roles-body-steps-md-semibold-fontWeight--value` | `{typography.weights.semibold}` |
-| `--ds-typography-roles-body-steps-md-semibold-lineHeight` | `{typography.scale.lineHeight.400}` |
+| `--ds-typography-roles-body-steps-md-semibold-lineHeight` | `{typography.scale.lineHeight.base}` |
 | `--ds-typography-roles-body-steps-md-semibold-lineHeight--type` | `dimension` |
-| `--ds-typography-roles-body-steps-md-semibold-lineHeight--value` | `{typography.scale.lineHeight.400}` |
-| `--ds-typography-roles-body-steps-md-semibold-letterSpacing` | `{typography.scale.letterSpacing.300}` |
+| `--ds-typography-roles-body-steps-md-semibold-lineHeight--value` | `{typography.scale.lineHeight.base}` |
+| `--ds-typography-roles-body-steps-md-semibold-letterSpacing` | `{typography.scale.letterSpacing.base}` |
 | `--ds-typography-roles-body-steps-md-semibold-letterSpacing--type` | `dimension` |
-| `--ds-typography-roles-body-steps-md-semibold-letterSpacing--value` | `{typography.scale.letterSpacing.300}` |
-| `--ds-typography-roles-body-steps-sm-semibold-fontSize` | `{typography.scale.fontSize.300}` |
+| `--ds-typography-roles-body-steps-md-semibold-letterSpacing--value` | `{typography.scale.letterSpacing.base}` |
+| `--ds-typography-roles-body-steps-sm-semibold-fontSize` | `{typography.scale.fontSize.sm}` |
 | `--ds-typography-roles-body-steps-sm-semibold-fontSize--type` | `dimension` |
-| `--ds-typography-roles-body-steps-sm-semibold-fontSize--value` | `{typography.scale.fontSize.300}` |
+| `--ds-typography-roles-body-steps-sm-semibold-fontSize--value` | `{typography.scale.fontSize.sm}` |
 | `--ds-typography-roles-body-steps-sm-semibold-fontWeight` | `{typography.weights.semibold}` |
 | `--ds-typography-roles-body-steps-sm-semibold-fontWeight--type` | `fontWeight` |
 | `--ds-typography-roles-body-steps-sm-semibold-fontWeight--value` | `{typography.weights.semibold}` |
-| `--ds-typography-roles-body-steps-sm-semibold-lineHeight` | `{typography.scale.lineHeight.300}` |
+| `--ds-typography-roles-body-steps-sm-semibold-lineHeight` | `{typography.scale.lineHeight.sm}` |
 | `--ds-typography-roles-body-steps-sm-semibold-lineHeight--type` | `dimension` |
-| `--ds-typography-roles-body-steps-sm-semibold-lineHeight--value` | `{typography.scale.lineHeight.300}` |
-| `--ds-typography-roles-body-steps-sm-semibold-letterSpacing` | `{typography.scale.letterSpacing.300}` |
+| `--ds-typography-roles-body-steps-sm-semibold-lineHeight--value` | `{typography.scale.lineHeight.sm}` |
+| `--ds-typography-roles-body-steps-sm-semibold-letterSpacing` | `{typography.scale.letterSpacing.sm}` |
 | `--ds-typography-roles-body-steps-sm-semibold-letterSpacing--type` | `dimension` |
-| `--ds-typography-roles-body-steps-sm-semibold-letterSpacing--value` | `{typography.scale.letterSpacing.300}` |
-| `--ds-typography-roles-body-steps-xs-semibold-fontSize` | `{typography.scale.fontSize.250}` |
-| `--ds-typography-roles-body-steps-xs-semibold-fontSize--type` | `dimension` |
-| `--ds-typography-roles-body-steps-xs-semibold-fontSize--value` | `{typography.scale.fontSize.250}` |
-| `--ds-typography-roles-body-steps-xs-semibold-fontWeight` | `{typography.weights.semibold}` |
-| `--ds-typography-roles-body-steps-xs-semibold-fontWeight--type` | `fontWeight` |
-| `--ds-typography-roles-body-steps-xs-semibold-fontWeight--value` | `{typography.weights.semibold}` |
-| `--ds-typography-roles-body-steps-xs-semibold-lineHeight` | `{typography.scale.lineHeight.250}` |
-| `--ds-typography-roles-body-steps-xs-semibold-lineHeight--type` | `dimension` |
-| `--ds-typography-roles-body-steps-xs-semibold-lineHeight--value` | `{typography.scale.lineHeight.250}` |
-| `--ds-typography-roles-body-steps-xs-semibold-letterSpacing` | `{typography.scale.letterSpacing.300}` |
-| `--ds-typography-roles-body-steps-xs-semibold-letterSpacing--type` | `dimension` |
-| `--ds-typography-roles-body-steps-xs-semibold-letterSpacing--value` | `{typography.scale.letterSpacing.300}` |
+| `--ds-typography-roles-body-steps-sm-semibold-letterSpacing--value` | `{typography.scale.letterSpacing.sm}` |
 | `--ds-typography-roles-body-family` | `{typography.families.sans}` |
 | `--ds-typography-roles-body-family--type` | `fontFamily` |
 | `--ds-typography-roles-body-family--value` | `{typography.families.sans}` |
-| `--ds-typography-roles-caption--meta-steps` | `3` |
+| `--ds-typography-roles-code--meta-steps` | `1` |
+| `--ds-typography-roles-code--meta-nomenclature` | `tshirt` |
+| `--ds-typography-roles-code-steps-sm-fontSize` | `{typography.scale.fontSize.sm}` |
+| `--ds-typography-roles-code-steps-sm-fontSize--type` | `dimension` |
+| `--ds-typography-roles-code-steps-sm-fontSize--value` | `{typography.scale.fontSize.sm}` |
+| `--ds-typography-roles-code-steps-sm-fontWeight` | `{typography.weights.regular}` |
+| `--ds-typography-roles-code-steps-sm-fontWeight--type` | `fontWeight` |
+| `--ds-typography-roles-code-steps-sm-fontWeight--value` | `{typography.weights.regular}` |
+| `--ds-typography-roles-code-steps-sm-lineHeight` | `{typography.scale.lineHeight.sm}` |
+| `--ds-typography-roles-code-steps-sm-lineHeight--type` | `dimension` |
+| `--ds-typography-roles-code-steps-sm-lineHeight--value` | `{typography.scale.lineHeight.sm}` |
+| `--ds-typography-roles-code-steps-sm-letterSpacing` | `{typography.scale.letterSpacing.sm}` |
+| `--ds-typography-roles-code-steps-sm-letterSpacing--type` | `dimension` |
+| `--ds-typography-roles-code-steps-sm-letterSpacing--value` | `{typography.scale.letterSpacing.sm}` |
+| `--ds-typography-roles-code-family` | `{typography.families.mono}` |
+| `--ds-typography-roles-code-family--type` | `fontFamily` |
+| `--ds-typography-roles-code-family--value` | `{typography.families.mono}` |
+| `--ds-typography-roles-label--meta-steps` | `2` |
+| `--ds-typography-roles-label--meta-nomenclature` | `tshirt` |
+| `--ds-typography-roles-label-steps-md-fontSize` | `{typography.scale.fontSize.base}` |
+| `--ds-typography-roles-label-steps-md-fontSize--type` | `dimension` |
+| `--ds-typography-roles-label-steps-md-fontSize--value` | `{typography.scale.fontSize.base}` |
+| `--ds-typography-roles-label-steps-md-fontWeight` | `{typography.weights.medium}` |
+| `--ds-typography-roles-label-steps-md-fontWeight--type` | `fontWeight` |
+| `--ds-typography-roles-label-steps-md-fontWeight--value` | `{typography.weights.medium}` |
+| `--ds-typography-roles-label-steps-md-lineHeight` | `{typography.scale.lineHeight.base}` |
+| `--ds-typography-roles-label-steps-md-lineHeight--type` | `dimension` |
+| `--ds-typography-roles-label-steps-md-lineHeight--value` | `{typography.scale.lineHeight.base}` |
+| `--ds-typography-roles-label-steps-md-letterSpacing` | `{typography.scale.letterSpacing.base}` |
+| `--ds-typography-roles-label-steps-md-letterSpacing--type` | `dimension` |
+| `--ds-typography-roles-label-steps-md-letterSpacing--value` | `{typography.scale.letterSpacing.base}` |
+| `--ds-typography-roles-label-steps-sm-fontSize` | `{typography.scale.fontSize.sm}` |
+| `--ds-typography-roles-label-steps-sm-fontSize--type` | `dimension` |
+| `--ds-typography-roles-label-steps-sm-fontSize--value` | `{typography.scale.fontSize.sm}` |
+| `--ds-typography-roles-label-steps-sm-fontWeight` | `{typography.weights.medium}` |
+| `--ds-typography-roles-label-steps-sm-fontWeight--type` | `fontWeight` |
+| `--ds-typography-roles-label-steps-sm-fontWeight--value` | `{typography.weights.medium}` |
+| `--ds-typography-roles-label-steps-sm-lineHeight` | `{typography.scale.lineHeight.sm}` |
+| `--ds-typography-roles-label-steps-sm-lineHeight--type` | `dimension` |
+| `--ds-typography-roles-label-steps-sm-lineHeight--value` | `{typography.scale.lineHeight.sm}` |
+| `--ds-typography-roles-label-steps-sm-letterSpacing` | `{typography.scale.letterSpacing.sm}` |
+| `--ds-typography-roles-label-steps-sm-letterSpacing--type` | `dimension` |
+| `--ds-typography-roles-label-steps-sm-letterSpacing--value` | `{typography.scale.letterSpacing.sm}` |
+| `--ds-typography-roles-label-family` | `{typography.families.sans}` |
+| `--ds-typography-roles-label-family--type` | `fontFamily` |
+| `--ds-typography-roles-label-family--value` | `{typography.families.sans}` |
+| `--ds-typography-roles-caption--meta-steps` | `1` |
 | `--ds-typography-roles-caption--meta-nomenclature` | `tshirt` |
-| `--ds-typography-roles-caption-steps-md-fontSize` | `{typography.scale.fontSize.200}` |
-| `--ds-typography-roles-caption-steps-md-fontSize--type` | `dimension` |
-| `--ds-typography-roles-caption-steps-md-fontSize--value` | `{typography.scale.fontSize.200}` |
-| `--ds-typography-roles-caption-steps-md-fontWeight` | `{typography.weights.regular}` |
-| `--ds-typography-roles-caption-steps-md-fontWeight--type` | `fontWeight` |
-| `--ds-typography-roles-caption-steps-md-fontWeight--value` | `{typography.weights.regular}` |
-| `--ds-typography-roles-caption-steps-md-lineHeight` | `{typography.scale.lineHeight.b180}` |
-| `--ds-typography-roles-caption-steps-md-lineHeight--type` | `dimension` |
-| `--ds-typography-roles-caption-steps-md-lineHeight--value` | `{typography.scale.lineHeight.b180}` |
-| `--ds-typography-roles-caption-steps-md-letterSpacing` | `{typography.scale.letterSpacing.300}` |
-| `--ds-typography-roles-caption-steps-md-letterSpacing--type` | `dimension` |
-| `--ds-typography-roles-caption-steps-md-letterSpacing--value` | `{typography.scale.letterSpacing.300}` |
-| `--ds-typography-roles-caption-steps-sm-fontSize` | `{typography.scale.fontSize.b120}` |
+| `--ds-typography-roles-caption-steps-sm-fontSize` | `{typography.scale.fontSize.xs}` |
 | `--ds-typography-roles-caption-steps-sm-fontSize--type` | `dimension` |
-| `--ds-typography-roles-caption-steps-sm-fontSize--value` | `{typography.scale.fontSize.b120}` |
+| `--ds-typography-roles-caption-steps-sm-fontSize--value` | `{typography.scale.fontSize.xs}` |
 | `--ds-typography-roles-caption-steps-sm-fontWeight` | `{typography.weights.regular}` |
 | `--ds-typography-roles-caption-steps-sm-fontWeight--type` | `fontWeight` |
 | `--ds-typography-roles-caption-steps-sm-fontWeight--value` | `{typography.weights.regular}` |
-| `--ds-typography-roles-caption-steps-sm-lineHeight` | `{typography.scale.lineHeight.b160}` |
+| `--ds-typography-roles-caption-steps-sm-lineHeight` | `{typography.scale.lineHeight.xs}` |
 | `--ds-typography-roles-caption-steps-sm-lineHeight--type` | `dimension` |
-| `--ds-typography-roles-caption-steps-sm-lineHeight--value` | `{typography.scale.lineHeight.b160}` |
-| `--ds-typography-roles-caption-steps-sm-letterSpacing` | `{typography.scale.letterSpacing.300}` |
+| `--ds-typography-roles-caption-steps-sm-lineHeight--value` | `{typography.scale.lineHeight.xs}` |
+| `--ds-typography-roles-caption-steps-sm-letterSpacing` | `{typography.scale.letterSpacing.xs}` |
 | `--ds-typography-roles-caption-steps-sm-letterSpacing--type` | `dimension` |
-| `--ds-typography-roles-caption-steps-sm-letterSpacing--value` | `{typography.scale.letterSpacing.300}` |
-| `--ds-typography-roles-caption-steps-xs-fontSize` | `{typography.scale.fontSize.b110}` |
-| `--ds-typography-roles-caption-steps-xs-fontSize--type` | `dimension` |
-| `--ds-typography-roles-caption-steps-xs-fontSize--value` | `{typography.scale.fontSize.b110}` |
-| `--ds-typography-roles-caption-steps-xs-fontWeight` | `{typography.weights.regular}` |
-| `--ds-typography-roles-caption-steps-xs-fontWeight--type` | `fontWeight` |
-| `--ds-typography-roles-caption-steps-xs-fontWeight--value` | `{typography.weights.regular}` |
-| `--ds-typography-roles-caption-steps-xs-lineHeight` | `{typography.scale.lineHeight.b160}` |
-| `--ds-typography-roles-caption-steps-xs-lineHeight--type` | `dimension` |
-| `--ds-typography-roles-caption-steps-xs-lineHeight--value` | `{typography.scale.lineHeight.b160}` |
-| `--ds-typography-roles-caption-steps-xs-letterSpacing` | `{typography.scale.letterSpacing.300}` |
-| `--ds-typography-roles-caption-steps-xs-letterSpacing--type` | `dimension` |
-| `--ds-typography-roles-caption-steps-xs-letterSpacing--value` | `{typography.scale.letterSpacing.300}` |
+| `--ds-typography-roles-caption-steps-sm-letterSpacing--value` | `{typography.scale.letterSpacing.xs}` |
 | `--ds-typography-roles-caption-family` | `{typography.families.sans}` |
 | `--ds-typography-roles-caption-family--type` | `fontFamily` |
 | `--ds-typography-roles-caption-family--value` | `{typography.families.sans}` |
-| `--ds-typography-roles-headings--meta-steps` | `6` |
-| `--ds-typography-roles-headings--meta-nomenclature` | `hN` |
-| `--ds-typography-roles-headings-steps-h1-fontSize` | `{typography.scale.fontSize.800}` |
-| `--ds-typography-roles-headings-steps-h1-fontSize--type` | `dimension` |
-| `--ds-typography-roles-headings-steps-h1-fontSize--value` | `{typography.scale.fontSize.800}` |
-| `--ds-typography-roles-headings-steps-h1-fontWeight` | `{typography.weights.bold}` |
-| `--ds-typography-roles-headings-steps-h1-fontWeight--type` | `fontWeight` |
-| `--ds-typography-roles-headings-steps-h1-fontWeight--value` | `{typography.weights.bold}` |
-| `--ds-typography-roles-headings-steps-h1-lineHeight` | `{typography.scale.lineHeight.800}` |
-| `--ds-typography-roles-headings-steps-h1-lineHeight--type` | `dimension` |
-| `--ds-typography-roles-headings-steps-h1-lineHeight--value` | `{typography.scale.lineHeight.800}` |
-| `--ds-typography-roles-headings-steps-h1-letterSpacing` | `{typography.scale.letterSpacing.800}` |
-| `--ds-typography-roles-headings-steps-h1-letterSpacing--type` | `dimension` |
-| `--ds-typography-roles-headings-steps-h1-letterSpacing--value` | `{typography.scale.letterSpacing.800}` |
-| `--ds-typography-roles-headings-steps-h2-fontSize` | `{typography.scale.fontSize.700}` |
-| `--ds-typography-roles-headings-steps-h2-fontSize--type` | `dimension` |
-| `--ds-typography-roles-headings-steps-h2-fontSize--value` | `{typography.scale.fontSize.700}` |
-| `--ds-typography-roles-headings-steps-h2-fontWeight` | `{typography.weights.bold}` |
-| `--ds-typography-roles-headings-steps-h2-fontWeight--type` | `fontWeight` |
-| `--ds-typography-roles-headings-steps-h2-fontWeight--value` | `{typography.weights.bold}` |
-| `--ds-typography-roles-headings-steps-h2-lineHeight` | `{typography.scale.lineHeight.700}` |
-| `--ds-typography-roles-headings-steps-h2-lineHeight--type` | `dimension` |
-| `--ds-typography-roles-headings-steps-h2-lineHeight--value` | `{typography.scale.lineHeight.700}` |
-| `--ds-typography-roles-headings-steps-h2-letterSpacing` | `{typography.scale.letterSpacing.700}` |
-| `--ds-typography-roles-headings-steps-h2-letterSpacing--type` | `dimension` |
-| `--ds-typography-roles-headings-steps-h2-letterSpacing--value` | `{typography.scale.letterSpacing.700}` |
-| `--ds-typography-roles-headings-steps-h3-fontSize` | `{typography.scale.fontSize.600}` |
-| `--ds-typography-roles-headings-steps-h3-fontSize--type` | `dimension` |
-| `--ds-typography-roles-headings-steps-h3-fontSize--value` | `{typography.scale.fontSize.600}` |
-| `--ds-typography-roles-headings-steps-h3-fontWeight` | `{typography.weights.bold}` |
-| `--ds-typography-roles-headings-steps-h3-fontWeight--type` | `fontWeight` |
-| `--ds-typography-roles-headings-steps-h3-fontWeight--value` | `{typography.weights.bold}` |
-| `--ds-typography-roles-headings-steps-h3-lineHeight` | `{typography.scale.lineHeight.600}` |
-| `--ds-typography-roles-headings-steps-h3-lineHeight--type` | `dimension` |
-| `--ds-typography-roles-headings-steps-h3-lineHeight--value` | `{typography.scale.lineHeight.600}` |
-| `--ds-typography-roles-headings-steps-h3-letterSpacing` | `{typography.scale.letterSpacing.600}` |
-| `--ds-typography-roles-headings-steps-h3-letterSpacing--type` | `dimension` |
-| `--ds-typography-roles-headings-steps-h3-letterSpacing--value` | `{typography.scale.letterSpacing.600}` |
-| `--ds-typography-roles-headings-steps-h4-fontSize` | `{typography.scale.fontSize.500}` |
-| `--ds-typography-roles-headings-steps-h4-fontSize--type` | `dimension` |
-| `--ds-typography-roles-headings-steps-h4-fontSize--value` | `{typography.scale.fontSize.500}` |
-| `--ds-typography-roles-headings-steps-h4-fontWeight` | `{typography.weights.bold}` |
-| `--ds-typography-roles-headings-steps-h4-fontWeight--type` | `fontWeight` |
-| `--ds-typography-roles-headings-steps-h4-fontWeight--value` | `{typography.weights.bold}` |
-| `--ds-typography-roles-headings-steps-h4-lineHeight` | `{typography.scale.lineHeight.500}` |
-| `--ds-typography-roles-headings-steps-h4-lineHeight--type` | `dimension` |
-| `--ds-typography-roles-headings-steps-h4-lineHeight--value` | `{typography.scale.lineHeight.500}` |
-| `--ds-typography-roles-headings-steps-h4-letterSpacing` | `{typography.scale.letterSpacing.500}` |
-| `--ds-typography-roles-headings-steps-h4-letterSpacing--type` | `dimension` |
-| `--ds-typography-roles-headings-steps-h4-letterSpacing--value` | `{typography.scale.letterSpacing.500}` |
-| `--ds-typography-roles-headings-steps-h5-fontSize` | `{typography.scale.fontSize.400}` |
-| `--ds-typography-roles-headings-steps-h5-fontSize--type` | `dimension` |
-| `--ds-typography-roles-headings-steps-h5-fontSize--value` | `{typography.scale.fontSize.400}` |
-| `--ds-typography-roles-headings-steps-h5-fontWeight` | `{typography.weights.semibold}` |
-| `--ds-typography-roles-headings-steps-h5-fontWeight--type` | `fontWeight` |
-| `--ds-typography-roles-headings-steps-h5-fontWeight--value` | `{typography.weights.semibold}` |
-| `--ds-typography-roles-headings-steps-h5-lineHeight` | `{typography.scale.lineHeight.400}` |
-| `--ds-typography-roles-headings-steps-h5-lineHeight--type` | `dimension` |
-| `--ds-typography-roles-headings-steps-h5-lineHeight--value` | `{typography.scale.lineHeight.400}` |
-| `--ds-typography-roles-headings-steps-h5-letterSpacing` | `{typography.scale.letterSpacing.400}` |
-| `--ds-typography-roles-headings-steps-h5-letterSpacing--type` | `dimension` |
-| `--ds-typography-roles-headings-steps-h5-letterSpacing--value` | `{typography.scale.letterSpacing.400}` |
-| `--ds-typography-roles-headings-steps-h6-fontSize` | `{typography.scale.fontSize.300}` |
-| `--ds-typography-roles-headings-steps-h6-fontSize--type` | `dimension` |
-| `--ds-typography-roles-headings-steps-h6-fontSize--value` | `{typography.scale.fontSize.300}` |
-| `--ds-typography-roles-headings-steps-h6-fontWeight` | `{typography.weights.regular}` |
-| `--ds-typography-roles-headings-steps-h6-fontWeight--type` | `fontWeight` |
-| `--ds-typography-roles-headings-steps-h6-fontWeight--value` | `{typography.weights.regular}` |
-| `--ds-typography-roles-headings-steps-h6-lineHeight` | `{typography.scale.lineHeight.300}` |
-| `--ds-typography-roles-headings-steps-h6-lineHeight--type` | `dimension` |
-| `--ds-typography-roles-headings-steps-h6-lineHeight--value` | `{typography.scale.lineHeight.300}` |
-| `--ds-typography-roles-headings-steps-h6-letterSpacing` | `{typography.scale.letterSpacing.300}` |
-| `--ds-typography-roles-headings-steps-h6-letterSpacing--type` | `dimension` |
-| `--ds-typography-roles-headings-steps-h6-letterSpacing--value` | `{typography.scale.letterSpacing.300}` |
-| `--ds-typography-roles-headings-family` | `{typography.families.sans}` |
-| `--ds-typography-roles-headings-family--type` | `fontFamily` |
-| … | _(108 more)_ |
-
-## semanticColors
-
-
-| CSS variable | Value |
-|-------------|-------|
-| `--ds-semanticColors-icon-info-dark` | `{colors.primary.dark.400}` |
-| `--ds-semanticColors-icon-info-dark--type` | `color` |
-| `--ds-semanticColors-icon-info-dark--value` | `{colors.primary.dark.400}` |
-| `--ds-semanticColors-icon-info-light` | `{colors.primary.light.600}` |
-| `--ds-semanticColors-icon-info-light--type` | `color` |
-| `--ds-semanticColors-icon-info-light--value` | `{colors.primary.light.600}` |
-| `--ds-semanticColors-icon-info-usage-en` | `Help / info icons that open tooltips, neutral notifications.` |
-| `--ds-semanticColors-icon-info-usage-es` | `Iconos de ayuda / info que abren tooltips, notificaciones neutras.` |
-| `--ds-semanticColors-icon-info-example-en` | `Question-mark icon next to a label that opens a help tooltip.` |
-| `--ds-semanticColors-icon-info-example-es` | `Icono de interrogación junto a una label que abre un tooltip de ayuda.` |
-| `--ds-semanticColors-icon-info-description-en` | `Icon colour for informational hints.` |
-| `--ds-semanticColors-icon-info-description-es` | `Color de icono para tips informativos.` |
-| `--ds-semanticColors-icon-brand-dark` | `{colors.primary.dark.400}` |
-| `--ds-semanticColors-icon-brand-dark--type` | `color` |
-| `--ds-semanticColors-icon-brand-dark--value` | `{colors.primary.dark.400}` |
-| `--ds-semanticColors-icon-brand-light` | `{colors.primary.light.600}` |
-| `--ds-semanticColors-icon-brand-light--type` | `color` |
-| `--ds-semanticColors-icon-brand-light--value` | `{colors.primary.light.600}` |
-| `--ds-semanticColors-icon-brand-usage-en` | `Marketing emphasis, brand-anchored icons in callouts and headers.` |
-| `--ds-semanticColors-icon-brand-usage-es` | `Énfasis de marketing, iconos anclados a la marca en callouts y headers.` |
-| `--ds-semanticColors-icon-brand-example-en` | `Brand mark in the navbar, branded badge icon.` |
-| `--ds-semanticColors-icon-brand-example-es` | `Marca en la navbar, icono de badge con identidad.` |
-| `--ds-semanticColors-icon-brand-description-en` | `Brand-coloured icon for emphasis on the system's identity.` |
-| `--ds-semanticColors-icon-brand-description-es` | `Icono en color de marca para reforzar la identidad.` |
-| `--ds-semanticColors-icon-error-dark` | `{colors.error.dark.400}` |
-| `--ds-semanticColors-icon-error-dark--type` | `color` |
-| `--ds-semanticColors-icon-error-dark--value` | `{colors.error.dark.400}` |
-| `--ds-semanticColors-icon-error-light` | `{colors.error.light.600}` |
-| `--ds-semanticColors-icon-error-light--type` | `color` |
-| `--ds-semanticColors-icon-error-light--value` | `{colors.error.light.600}` |
-| `--ds-semanticColors-icon-error-usage-en` | `Triangle / alert icons in error messages, inline validation glyphs.` |
-| `--ds-semanticColors-icon-error-usage-es` | `Iconos de alerta / triángulo en mensajes de error, glifos de validación inline.` |
-| `--ds-semanticColors-icon-error-example-en` | `Warning icon next to a failed form field.` |
-| `--ds-semanticColors-icon-error-example-es` | `Icono de advertencia junto a un campo con error.` |
-| `--ds-semanticColors-icon-error-description-en` | `Icon colour for error indicators.` |
-| `--ds-semanticColors-icon-error-description-es` | `Color de icono para indicadores de error.` |
-| `--ds-semanticColors-icon-primary-dark` | `{colors.neutral.dark.50}` |
-| `--ds-semanticColors-icon-primary-dark--type` | `color` |
-| `--ds-semanticColors-icon-primary-dark--value` | `{colors.neutral.dark.50}` |
-| `--ds-semanticColors-icon-primary-light` | `{colors.neutral.light.900}` |
-| `--ds-semanticColors-icon-primary-light--type` | `color` |
-| `--ds-semanticColors-icon-primary-light--value` | `{colors.neutral.light.900}` |
-| `--ds-semanticColors-icon-primary-usage-en` | `Standard icons next to body content. Pairs with `text.primary`.` |
-| `--ds-semanticColors-icon-primary-usage-es` | `Iconos estándar junto al contenido. Acompaña a `text.primary`.` |
-| `--ds-semanticColors-icon-primary-example-en` | `Search icon in the navbar, leading icon in a list row.` |
-| `--ds-semanticColors-icon-primary-example-es` | `Icono de búsqueda en la navbar, icono inicial de una fila.` |
-| `--ds-semanticColors-icon-primary-description-en` | `Default icon colour for icons paired with primary text.` |
-| `--ds-semanticColors-icon-primary-description-es` | `Color por defecto para iconos que acompañan al texto primario.` |
-| `--ds-semanticColors-icon-success-dark` | `{colors.success.dark.400}` |
-| `--ds-semanticColors-icon-success-dark--type` | `color` |
-| `--ds-semanticColors-icon-success-dark--value` | `{colors.success.dark.400}` |
-| `--ds-semanticColors-icon-success-light` | `{colors.success.light.600}` |
-| `--ds-semanticColors-icon-success-light--type` | `color` |
-| `--ds-semanticColors-icon-success-light--value` | `{colors.success.light.600}` |
-| `--ds-semanticColors-icon-success-usage-en` | `Tick / check icons in success states.` |
-| `--ds-semanticColors-icon-success-usage-es` | `Iconos de check / tick en estados de éxito.` |
-| `--ds-semanticColors-icon-success-example-en` | `Green check on a completed task.` |
-| `--ds-semanticColors-icon-success-example-es` | `Check verde en una tarea completada.` |
-| `--ds-semanticColors-icon-success-description-en` | `Icon colour for confirmation indicators.` |
-| `--ds-semanticColors-icon-success-description-es` | `Color de icono para indicadores de confirmación.` |
-| `--ds-semanticColors-icon-warning-dark` | `{colors.warning.dark.400}` |
-| `--ds-semanticColors-icon-warning-dark--type` | `color` |
-| `--ds-semanticColors-icon-warning-dark--value` | `{colors.warning.dark.400}` |
-| `--ds-semanticColors-icon-warning-light` | `{colors.warning.light.600}` |
-| `--ds-semanticColors-icon-warning-light--type` | `color` |
-| `--ds-semanticColors-icon-warning-light--value` | `{colors.warning.light.600}` |
-| `--ds-semanticColors-icon-warning-usage-en` | `Heads-up icons in warning callouts.` |
-| `--ds-semanticColors-icon-warning-usage-es` | `Iconos de aviso en callouts de advertencia.` |
-| `--ds-semanticColors-icon-warning-example-en` | `Caution triangle on a low-storage banner.` |
-| `--ds-semanticColors-icon-warning-example-es` | `Triángulo de advertencia en un banner de almacenamiento bajo.` |
-| `--ds-semanticColors-icon-warning-description-en` | `Icon colour for caution indicators.` |
-| `--ds-semanticColors-icon-warning-description-es` | `Color de icono para indicadores de precaución.` |
-| `--ds-semanticColors-icon-on-color-dark` | `{colors.neutral.dark.50}` |
-| `--ds-semanticColors-icon-on-color-dark--type` | `color` |
-| `--ds-semanticColors-icon-on-color-dark--value` | `{colors.neutral.dark.50}` |
-| `--ds-semanticColors-icon-on-color-light` | `{colors.neutral.light.50}` |
-| `--ds-semanticColors-icon-on-color-light--type` | `color` |
-| `--ds-semanticColors-icon-on-color-light--value` | `{colors.neutral.light.50}` |
-| `--ds-semanticColors-icon-on-color-usage-en` | `Pair with `surface.accent` / status surfaces. The classic white check inside a coloured button.` |
-| `--ds-semanticColors-icon-on-color-usage-es` | `Acompaña a `surface.accent` o status surfaces. El típico check blanco dentro de un botón coloreado.` |
-| `--ds-semanticColors-icon-on-color-example-en` | `Check icon inside a primary button.` |
-| `--ds-semanticColors-icon-on-color-example-es` | `Icono de check dentro de un botón primario.` |
-| `--ds-semanticColors-icon-on-color-description-en` | `Icon colour for surfaces using a brand or status fill.` |
-| `--ds-semanticColors-icon-on-color-description-es` | `Color de icono para superficies con fill de marca o de estado.` |
-| `--ds-semanticColors-icon-tertiary-dark` | `{colors.neutral.dark.600}` |
-| `--ds-semanticColors-icon-tertiary-dark--type` | `color` |
-| `--ds-semanticColors-icon-tertiary-dark--value` | `{colors.neutral.dark.600}` |
-| `--ds-semanticColors-icon-tertiary-light` | `{colors.neutral.light.400}` |
-| `--ds-semanticColors-icon-tertiary-light--type` | `color` |
-| `--ds-semanticColors-icon-tertiary-light--value` | `{colors.neutral.light.400}` |
-| `--ds-semanticColors-icon-tertiary-usage-en` | `Use on disabled controls or for very quiet visual cues.` |
-| `--ds-semanticColors-icon-tertiary-usage-es` | `En controles deshabilitados o señales visuales muy discretas.` |
-| `--ds-semanticColors-icon-tertiary-example-en` | `Disabled action icon, faded helper glyph.` |
-| `--ds-semanticColors-icon-tertiary-example-es` | `Icono de acción deshabilitado, glifo de ayuda atenuado.` |
-| `--ds-semanticColors-icon-tertiary-description-en` | `Lowest-emphasis icon colour. Often used for disabled-state icons.` |
-| `--ds-semanticColors-icon-tertiary-description-es` | `Color de iconos con mínimo énfasis. Se usa también para estados deshabilitados.` |
-| `--ds-semanticColors-icon-secondary-dark` | `{colors.neutral.dark.300}` |
-| `--ds-semanticColors-icon-secondary-dark--type` | `color` |
-| `--ds-semanticColors-icon-secondary-dark--value` | `{colors.neutral.dark.300}` |
-| `--ds-semanticColors-icon-secondary-light` | `{colors.neutral.light.700}` |
-| `--ds-semanticColors-icon-secondary-light--type` | `color` |
-| `--ds-semanticColors-icon-secondary-light--value` | `{colors.neutral.light.700}` |
-| `--ds-semanticColors-icon-secondary-usage-en` | `Decorative icons, metadata indicators, secondary affordances.` |
-| `--ds-semanticColors-icon-secondary-usage-es` | `Iconos decorativos, indicadores de metadatos, controles secundarios.` |
-| `--ds-semanticColors-icon-secondary-example-en` | `Calendar icon next to a timestamp.` |
-| `--ds-semanticColors-icon-secondary-example-es` | `Icono de calendario junto a una fecha.` |
-| `--ds-semanticColors-icon-secondary-description-en` | `Lower-emphasis icon colour for decorative or metadata icons.` |
-| `--ds-semanticColors-icon-secondary-description-es` | `Color de menor énfasis para iconos decorativos o de metadatos.` |
-| `--ds-semanticColors-icon-on-primary-dark` | `{colors.neutral.dark.50}` |
-| `--ds-semanticColors-icon-on-primary-dark--type` | `color` |
-| `--ds-semanticColors-icon-on-primary-dark--value` | `{colors.neutral.dark.50}` |
-| `--ds-semanticColors-icon-on-primary-light` | `{colors.neutral.light.50}` |
-| `--ds-semanticColors-icon-on-primary-light--type` | `color` |
-| `--ds-semanticColors-icon-on-primary-light--value` | `{colors.neutral.light.50}` |
-| `--ds-semanticColors-icon-on-primary-usage-en` | `Pair with primary filled surfaces — ensures icon contrast against saturated fills.` |
-| `--ds-semanticColors-icon-on-primary-usage-es` | `Acompaña a superficies rellenas primarias — garantiza contraste del icono sobre fills saturados.` |
-| `--ds-semanticColors-icon-on-primary-example-en` | `Leading icon inside a primary filled button.` |
-| `--ds-semanticColors-icon-on-primary-example-es` | `Icono inicial dentro de un botón relleno primario.` |
-| `--ds-semanticColors-icon-on-primary-description-en` | `Icon colour for primary elements placed on a coloured/filled background.` |
-| `--ds-semanticColors-icon-on-primary-description-es` | `Color de icono para elementos primarios sobre un fondo coloreado/relleno.` |
-| `--ds-semanticColors-icon-on-tertiary-dark` | `{colors.neutral.dark.50}` |
-| `--ds-semanticColors-icon-on-tertiary-dark--type` | `color` |
-| `--ds-semanticColors-icon-on-tertiary-dark--value` | `{colors.neutral.dark.50}` |
-| `--ds-semanticColors-icon-on-tertiary-light` | `{colors.neutral.light.50}` |
-| `--ds-semanticColors-icon-on-tertiary-light--type` | `color` |
-| `--ds-semanticColors-icon-on-tertiary-light--value` | `{colors.neutral.light.50}` |
-| `--ds-semanticColors-icon-on-tertiary-usage-en` | `Pair with tertiary filled surfaces — use when a quiet filled surface still needs an icon.` |
-| `--ds-semanticColors-icon-on-tertiary-usage-es` | `Acompaña a superficies rellenas terciarias — úsalo cuando una superficie rellena discreta aún necesita un icono.` |
-| `--ds-semanticColors-icon-on-tertiary-example-en` | `Icon inside a tertiary filled badge or label.` |
-| `--ds-semanticColors-icon-on-tertiary-example-es` | `Icono dentro de un badge o label relleno terciario.` |
-| `--ds-semanticColors-icon-on-tertiary-description-en` | `Icon colour for tertiary elements placed on a coloured/filled background.` |
-| `--ds-semanticColors-icon-on-tertiary-description-es` | `Color de icono para elementos terciarios sobre un fondo coloreado/relleno.` |
-| `--ds-semanticColors-icon-on-secondary-dark` | `{colors.neutral.dark.50}` |
-| `--ds-semanticColors-icon-on-secondary-dark--type` | `color` |
-| `--ds-semanticColors-icon-on-secondary-dark--value` | `{colors.neutral.dark.50}` |
-| `--ds-semanticColors-icon-on-secondary-light` | `{colors.neutral.light.50}` |
-| `--ds-semanticColors-icon-on-secondary-light--type` | `color` |
-| `--ds-semanticColors-icon-on-secondary-light--value` | `{colors.neutral.light.50}` |
-| `--ds-semanticColors-icon-on-secondary-usage-en` | `Pair with secondary filled surfaces to keep icons readable over the fill.` |
-| `--ds-semanticColors-icon-on-secondary-usage-es` | `Acompaña a superficies rellenas secundarias para mantener legibilidad del icono sobre el fill.` |
-| `--ds-semanticColors-icon-on-secondary-example-en` | `Leading icon inside a secondary filled button or chip.` |
-| `--ds-semanticColors-icon-on-secondary-example-es` | `Icono inicial dentro de un botón relleno secundario o chip.` |
-| `--ds-semanticColors-icon-on-secondary-description-en` | `Icon colour for secondary elements placed on a coloured/filled background.` |
-| `--ds-semanticColors-icon-on-secondary-description-es` | `Color de icono para elementos secundarios sobre un fondo coloreado/relleno.` |
-| `--ds-semanticColors-text-info-dark` | `{colors.primary.dark.400}` |
-| `--ds-semanticColors-text-info-dark--type` | `color` |
-| `--ds-semanticColors-text-info-dark--value` | `{colors.primary.dark.400}` |
-| `--ds-semanticColors-text-info-light` | `{colors.primary.light.600}` |
-| `--ds-semanticColors-text-info-light--type` | `color` |
-| `--ds-semanticColors-text-info-light--value` | `{colors.primary.light.600}` |
-| `--ds-semanticColors-text-info-usage-en` | `Neutral notifications, tips, announcements.` |
-| `--ds-semanticColors-text-info-usage-es` | `Notificaciones neutras, tips, anuncios.` |
-| `--ds-semanticColors-text-info-example-en` | `“Did you know…” tip in a help panel.` |
-| `--ds-semanticColors-text-info-example-es` | `Tip “¿Sabías que…?” en un panel de ayuda.` |
-| `--ds-semanticColors-text-info-description-en` | `Informational text colour.` |
-| `--ds-semanticColors-text-info-description-es` | `Color para texto informativo.` |
-| `--ds-semanticColors-text-link-dark` | `{colors.primary.dark.400}` |
-| `--ds-semanticColors-text-link-dark--type` | `color` |
-| `--ds-semanticColors-text-link-dark--value` | `{colors.primary.dark.400}` |
-| `--ds-semanticColors-text-link-light` | `{colors.primary.light.600}` |
-| `--ds-semanticColors-text-link-light--type` | `color` |
-| `--ds-semanticColors-text-link-light--value` | `{colors.primary.light.600}` |
-| `--ds-semanticColors-text-link-usage-en` | `Hyperlinks within paragraphs and lists. Underline by default for accessibility.` |
-| `--ds-semanticColors-text-link-usage-es` | `Hipervínculos en párrafos y listas. Subrayado por defecto para accesibilidad.` |
-| `--ds-semanticColors-text-link-example-en` | `Inline anchor inside body copy.` |
-| `--ds-semanticColors-text-link-example-es` | `Anchor inline en el cuerpo del texto.` |
-| `--ds-semanticColors-text-link-description-en` | `Inline link colour.` |
-| `--ds-semanticColors-text-link-description-es` | `Color para enlaces en línea.` |
-| `--ds-semanticColors-text-brand-dark` | `{colors.primary.dark.400}` |
-| `--ds-semanticColors-text-brand-dark--type` | `color` |
-| `--ds-semanticColors-text-brand-dark--value` | `{colors.primary.dark.400}` |
-| `--ds-semanticColors-text-brand-light` | `{colors.primary.light.600}` |
-| `--ds-semanticColors-text-brand-light--type` | `color` |
-| `--ds-semanticColors-text-brand-light--value` | `{colors.primary.light.600}` |
-| `--ds-semanticColors-text-brand-usage-en` | `Logos in copy, marketing emphasis, brand-anchored callouts.` |
-| `--ds-semanticColors-text-brand-usage-es` | `Logos en el copy, emfasis de marketing, callouts ancladas a la marca.` |
-| `--ds-semanticColors-text-brand-example-en` | `Brand name highlighted in a hero subtitle.` |
-| `--ds-semanticColors-text-brand-example-es` | `Nombre de marca destacado en el subtítulo de un hero.` |
-| `--ds-semanticColors-text-brand-description-en` | `Brand-coloured text for emphasis without acting as a link.` |
-| `--ds-semanticColors-text-brand-description-es` | `Texto en color de marca para énfasis sin ser enlace.` |
-| `--ds-semanticColors-text-error-dark` | `{colors.error.dark.400}` |
-| `--ds-semanticColors-text-error-dark--type` | `color` |
-| `--ds-semanticColors-text-error-dark--value` | `{colors.error.dark.400}` |
-| `--ds-semanticColors-text-error-light` | `{colors.error.light.600}` |
-| `--ds-semanticColors-text-error-light--type` | `color` |
-| `--ds-semanticColors-text-error-light--value` | `{colors.error.light.600}` |
-| `--ds-semanticColors-text-error-usage-en` | `Field-level error messages, critical alert copy.` |
-| `--ds-semanticColors-text-error-usage-es` | `Mensajes de error a nivel de campo, copy de alertas críticas.` |
-| `--ds-semanticColors-text-error-example-en` | `Form validation error under an input.` |
-| `--ds-semanticColors-text-error-example-es` | `Error de validación de formulario bajo un input.` |
-| `--ds-semanticColors-text-error-description-en` | `Error and validation text.` |
-| `--ds-semanticColors-text-error-description-es` | `Texto de error y validación.` |
-| `--ds-semanticColors-text-primary-dark` | `{colors.neutral.dark.50}` |
-| `--ds-semanticColors-text-primary-dark--type` | `color` |
-| `--ds-semanticColors-text-primary-dark--value` | `{colors.neutral.dark.50}` |
-| `--ds-semanticColors-text-primary-light` | `{colors.neutral.light.900}` |
-| `--ds-semanticColors-text-primary-light--type` | `color` |
-| `--ds-semanticColors-text-primary-light--value` | `{colors.neutral.light.900}` |
-| `--ds-semanticColors-text-primary-usage-en` | `Default for any meaningful content on a neutral surface.` |
-| `--ds-semanticColors-text-primary-usage-es` | `Por defecto para cualquier contenido importante en superficie neutra.` |
-| … | _(1324 more)_ |
+| `--ds-typography-roles-heading--meta-steps` | `4` |
+| `--ds-typography-roles-heading--meta-nomenclature` | `tshirt` |
+| `--ds-typography-roles-heading-steps-h1-fontSize` | `{typography.scale.fontSize.4xl}` |
+| `--ds-typography-roles-heading-steps-h1-fontSize--type` | `dimension` |
+| `--ds-typography-roles-heading-steps-h1-fontSize--value` | `{typography.scale.fontSize.4xl}` |
+| `--ds-typography-roles-heading-steps-h1-fontWeight` | `{typography.weights.bold}` |
+| `--ds-typography-roles-heading-steps-h1-fontWeight--type` | `fontWeight` |
+| `--ds-typography-roles-heading-steps-h1-fontWeight--value` | `{typography.weights.bold}` |
+| `--ds-typography-roles-heading-steps-h1-lineHeight` | `{typography.scale.lineHeight.4xl}` |
+| `--ds-typography-roles-heading-steps-h1-lineHeight--type` | `dimension` |
+| `--ds-typography-roles-heading-steps-h1-lineHeight--value` | `{typography.scale.lineHeight.4xl}` |
+| `--ds-typography-roles-heading-steps-h1-letterSpacing` | `{typography.scale.letterSpacing.4xl}` |
+| `--ds-typography-roles-heading-steps-h1-letterSpacing--type` | `dimension` |
+| `--ds-typography-roles-heading-steps-h1-letterSpacing--value` | `{typography.scale.letterSpacing.4xl}` |
+| `--ds-typography-roles-heading-steps-h2-fontSize` | `{typography.scale.fontSize.3xl}` |
+| `--ds-typography-roles-heading-steps-h2-fontSize--type` | `dimension` |
+| `--ds-typography-roles-heading-steps-h2-fontSize--value` | `{typography.scale.fontSize.3xl}` |
+| `--ds-typography-roles-heading-steps-h2-fontWeight` | `{typography.weights.semibold}` |
+| `--ds-typography-roles-heading-steps-h2-fontWeight--type` | `fontWeight` |
+| `--ds-typography-roles-heading-steps-h2-fontWeight--value` | `{typography.weights.semibold}` |
+| `--ds-typography-roles-heading-steps-h2-lineHeight` | `{typography.scale.lineHeight.3xl}` |
+| `--ds-typography-roles-heading-steps-h2-lineHeight--type` | `dimension` |
+| `--ds-typography-roles-heading-steps-h2-lineHeight--value` | `{typography.scale.lineHeight.3xl}` |
+| `--ds-typography-roles-heading-steps-h2-letterSpacing` | `{typography.scale.letterSpacing.3xl}` |
+| `--ds-typography-roles-heading-steps-h2-letterSpacing--type` | `dimension` |
+| `--ds-typography-roles-heading-steps-h2-letterSpacing--value` | `{typography.scale.letterSpacing.3xl}` |
+| `--ds-typography-roles-heading-steps-h3-fontSize` | `{typography.scale.fontSize.2xl}` |
+| `--ds-typography-roles-heading-steps-h3-fontSize--type` | `dimension` |
+| `--ds-typography-roles-heading-steps-h3-fontSize--value` | `{typography.scale.fontSize.2xl}` |
+| `--ds-typography-roles-heading-steps-h3-fontWeight` | `{typography.weights.semibold}` |
+| `--ds-typography-roles-heading-steps-h3-fontWeight--type` | `fontWeight` |
+| `--ds-typography-roles-heading-steps-h3-fontWeight--value` | `{typography.weights.semibold}` |
+| `--ds-typography-roles-heading-steps-h3-lineHeight` | `{typography.scale.lineHeight.2xl}` |
+| `--ds-typography-roles-heading-steps-h3-lineHeight--type` | `dimension` |
+| `--ds-typography-roles-heading-steps-h3-lineHeight--value` | `{typography.scale.lineHeight.2xl}` |
+| `--ds-typography-roles-heading-steps-h3-letterSpacing` | `{typography.scale.letterSpacing.2xl}` |
+| `--ds-typography-roles-heading-steps-h3-letterSpacing--type` | `dimension` |
+| `--ds-typography-roles-heading-steps-h3-letterSpacing--value` | `{typography.scale.letterSpacing.2xl}` |
+| `--ds-typography-roles-heading-steps-h4-fontSize` | `{typography.scale.fontSize.xl}` |
+| `--ds-typography-roles-heading-steps-h4-fontSize--type` | `dimension` |
+| `--ds-typography-roles-heading-steps-h4-fontSize--value` | `{typography.scale.fontSize.xl}` |
+| `--ds-typography-roles-heading-steps-h4-fontWeight` | `{typography.weights.semibold}` |
+| `--ds-typography-roles-heading-steps-h4-fontWeight--type` | `fontWeight` |
+| `--ds-typography-roles-heading-steps-h4-fontWeight--value` | `{typography.weights.semibold}` |
+| `--ds-typography-roles-heading-steps-h4-lineHeight` | `{typography.scale.lineHeight.xl}` |
+| `--ds-typography-roles-heading-steps-h4-lineHeight--type` | `dimension` |
+| `--ds-typography-roles-heading-steps-h4-lineHeight--value` | `{typography.scale.lineHeight.xl}` |
+| `--ds-typography-roles-heading-steps-h4-letterSpacing` | `{typography.scale.letterSpacing.xl}` |
+| `--ds-typography-roles-heading-steps-h4-letterSpacing--type` | `dimension` |
+| `--ds-typography-roles-heading-steps-h4-letterSpacing--value` | `{typography.scale.letterSpacing.xl}` |
+| `--ds-typography-roles-heading-family` | `{typography.families.sans}` |
+| `--ds-typography-roles-heading-family--type` | `fontFamily` |
+| `--ds-typography-roles-heading-family--value` | `{typography.families.sans}` |
+| `--ds-typography-scale-fontSize-lg` | `18px` |
+| … | _(86 more)_ |
