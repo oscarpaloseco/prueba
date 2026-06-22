@@ -1,6 +1,6 @@
-# @prueba/design-system
+# @shadcn/design-system
 
-Design system synced from **prueba** via DS Generator Repeat.
+Design system synced from **Shadcn** via DS Generator Repeat.
 This package is auto-generated — re-syncing the project from the editor
 will overwrite `tokens.*` and `components/*.tsx`.
 
@@ -13,19 +13,19 @@ will overwrite `tokens.*` and `components/*.tsx`.
 - **`tokens.json`** — same tokens in raw DTCG form, for build-time
   tooling (Style Dictionary, Tailwind config generators, etc.).
 - **`components/*.tsx`** — typed React functional components.
-  3 component(s) included.
+  15 component(s) included.
 
 ## Quickstart
 
 ```tsx
 // once, in your app root:
-import "@prueba/design-system/tokens.css";
+import "@shadcn/design-system/tokens.css";
 
 // anywhere:
-import { Avatar } from "@prueba/design-system";
+import { Badge } from "@shadcn/design-system";
 
 export function MyPage() {
-  return <Avatar />;
+  return <Badge />;
 }
 ```
 
@@ -41,9 +41,21 @@ components manually:
 
 ## Component reference
 
-- `Avatar` — see `components/Avatar.tsx` for the typed props.
+- `Badge` — see `components/Badge.tsx` for the typed props.
 - `Button` — see `components/Button.tsx` for the typed props.
+- `ButtonGroup` — see `components/ButtonGroup.tsx` for the typed props.
 - `Card` — see `components/Card.tsx` for the typed props.
+- `Checkbox` — see `components/Checkbox.tsx` for the typed props.
+- `Field` — see `components/Field.tsx` for the typed props.
+- `FieldGroup` — see `components/FieldGroup.tsx` for the typed props.
+- `Input` — see `components/Input.tsx` for the typed props.
+- `InputGroup` — see `components/InputGroup.tsx` for the typed props.
+- `Label` — see `components/Label.tsx` for the typed props.
+- `RadioGroup` — see `components/RadioGroup.tsx` for the typed props.
+- `Select` — see `components/Select.tsx` for the typed props.
+- `Switch` — see `components/Switch.tsx` for the typed props.
+- `Textarea` — see `components/Textarea.tsx` for the typed props.
+- `ToggleGroup` — see `components/ToggleGroup.tsx` for the typed props.
 
 ## Notes for AI agents (Claude, Cursor, etc.)
 
@@ -53,4 +65,4 @@ interface — read them before instantiating. Token usage: `var(--ds-…)` from
 `tokens.css` (never hard-code hex values).
 
 
-Generated at 2026-06-10T16:39:25.746Z.
+Generated at 2026-06-22T16:27:55.144Z.
